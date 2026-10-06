@@ -1,0 +1,4446 @@
+{
+  "version": 1,
+  "provenance": "Hand-authored synthetic diagnostic screen, not real agent tasks. Second variants reverse options and add neutral framing. Source groups are disjoint across splits. No Laya outputs were used to create labels.",
+  "cases": [
+    {
+      "id": "routing-00-0",
+      "source_group": "authored/routing/00",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Fix checkout rejecting an expired coupon.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-00-1",
+      "source_group": "authored/routing/00",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Request: Fix checkout rejecting an expired coupon.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-01-0",
+      "source_group": "authored/routing/01",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Update README installation instructions.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-01-1",
+      "source_group": "authored/routing/01",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Request: Update README installation instructions.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-02-0",
+      "source_group": "authored/routing/02",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Add a regression test for an empty list.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-02-1",
+      "source_group": "authored/routing/02",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Request: Add a regression test for an empty list.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-03-0",
+      "source_group": "authored/routing/03",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Upgrade the requests package to a compatible version.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-03-1",
+      "source_group": "authored/routing/03",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Request: Upgrade the requests package to a compatible version.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-04-0",
+      "source_group": "authored/routing/04",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Change the CI matrix to include Python 3.12.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-04-1",
+      "source_group": "authored/routing/04",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Request: Change the CI matrix to include Python 3.12.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-05-0",
+      "source_group": "authored/routing/05",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Investigate whether this model is appropriate for routing.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-05-1",
+      "source_group": "authored/routing/05",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Request: Investigate whether this model is appropriate for routing.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-06-0",
+      "source_group": "authored/routing/06",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Refactor the retry loop without changing behavior.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-06-1",
+      "source_group": "authored/routing/06",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Request: Refactor the retry loop without changing behavior.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-07-0",
+      "source_group": "authored/routing/07",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Document the supported environment variables.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-07-1",
+      "source_group": "authored/routing/07",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Request: Document the supported environment variables.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-08-0",
+      "source_group": "authored/routing/08",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Extend unit coverage for leap-day parsing.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-08-1",
+      "source_group": "authored/routing/08",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Request: Extend unit coverage for leap-day parsing.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-09-0",
+      "source_group": "authored/routing/09",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Resolve the dependency lockfile conflict.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-09-1",
+      "source_group": "authored/routing/09",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Request: Resolve the dependency lockfile conflict.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-10-0",
+      "source_group": "authored/routing/10",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Set the development server port in configuration.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-10-1",
+      "source_group": "authored/routing/10",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Request: Set the development server port in configuration.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-11-0",
+      "source_group": "authored/routing/11",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Research current browser support for this API.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-11-1",
+      "source_group": "authored/routing/11",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Request: Research current browser support for this API.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-12-0",
+      "source_group": "authored/routing/12",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Add pagination to the existing search endpoint.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-12-1",
+      "source_group": "authored/routing/12",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Request: Add pagination to the existing search endpoint.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-13-0",
+      "source_group": "authored/routing/13",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Write an API usage guide for the current endpoint.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-13-1",
+      "source_group": "authored/routing/13",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Request: Write an API usage guide for the current endpoint.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-14-0",
+      "source_group": "authored/routing/14",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Write integration tests for the payment callback.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-14-1",
+      "source_group": "authored/routing/14",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Request: Write integration tests for the payment callback.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-15-0",
+      "source_group": "authored/routing/15",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Replace an abandoned library dependency.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-15-1",
+      "source_group": "authored/routing/15",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Request: Replace an abandoned library dependency.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-16-0",
+      "source_group": "authored/routing/16",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Update the Docker build settings.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-16-1",
+      "source_group": "authored/routing/16",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Request: Update the Docker build settings.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-17-0",
+      "source_group": "authored/routing/17",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Compare two database designs before implementation.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-17-1",
+      "source_group": "authored/routing/17",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Request: Compare two database designs before implementation.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-18-0",
+      "source_group": "authored/routing/18",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Repair Unicode handling in the text parser.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-18-1",
+      "source_group": "authored/routing/18",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Request: Repair Unicode handling in the text parser.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-19-0",
+      "source_group": "authored/routing/19",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Correct a broken link in the documentation.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-19-1",
+      "source_group": "authored/routing/19",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Request: Correct a broken link in the documentation.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-20-0",
+      "source_group": "authored/routing/20",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Add test cases for Unicode whitespace.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-20-1",
+      "source_group": "authored/routing/20",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Request: Add test cases for Unicode whitespace.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-21-0",
+      "source_group": "authored/routing/21",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Pin numpy to the version supported by our framework.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-21-1",
+      "source_group": "authored/routing/21",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Request: Pin numpy to the version supported by our framework.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-22-0",
+      "source_group": "authored/routing/22",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Configure the log level through the existing settings file.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-22-1",
+      "source_group": "authored/routing/22",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Request: Configure the log level through the existing settings file.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-23-0",
+      "source_group": "authored/routing/23",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Find primary documentation about token caching.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-23-1",
+      "source_group": "authored/routing/23",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Request: Find primary documentation about token caching.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-24-0",
+      "source_group": "authored/routing/24",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Implement a missing CSV escaping function.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-24-1",
+      "source_group": "authored/routing/24",
+      "split": "development",
+      "workload": "routing",
+      "expected": "coding",
+      "request": {
+        "state": "Request: Implement a missing CSV escaping function.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-25-0",
+      "source_group": "authored/routing/25",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Explain the existing database backup procedure in docs.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-25-1",
+      "source_group": "authored/routing/25",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "documentation",
+      "request": {
+        "state": "Request: Explain the existing database backup procedure in docs.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-26-0",
+      "source_group": "authored/routing/26",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Create tests for the timeout boundary.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-26-1",
+      "source_group": "authored/routing/26",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "testing",
+      "request": {
+        "state": "Request: Create tests for the timeout boundary.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-27-0",
+      "source_group": "authored/routing/27",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Install the missing package needed by our tool.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-27-1",
+      "source_group": "authored/routing/27",
+      "split": "development",
+      "workload": "routing",
+      "expected": "dependency",
+      "request": {
+        "state": "Request: Install the missing package needed by our tool.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-28-0",
+      "source_group": "authored/routing/28",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Adjust the deployment environment configuration.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-28-1",
+      "source_group": "authored/routing/28",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "configuration",
+      "request": {
+        "state": "Request: Adjust the deployment environment configuration.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-29-0",
+      "source_group": "authored/routing/29",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Study the performance tradeoffs of CPU versus GPU inference.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "coding": "Implement, fix, or refactor code",
+              "documentation": "Write or repair documentation",
+              "testing": "Write or extend tests",
+              "dependency": "Install, upgrade, or change packages",
+              "configuration": "Change settings or build configuration",
+              "research": "Investigate facts or compare alternatives"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "routing-29-1",
+      "source_group": "authored/routing/29",
+      "split": "heldout",
+      "workload": "routing",
+      "expected": "research",
+      "request": {
+        "state": "Request: Study the performance tradeoffs of CPU versus GPU inference.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the requested work by its primary intent. Choose coding for implementing or fixing production code; testing for writing tests; documentation for docs; dependency for package changes; configuration for settings; research for investigation.",
+            "criteria": {
+              "research": "Investigate facts or compare alternatives",
+              "configuration": "Change settings or build configuration",
+              "dependency": "Install, upgrade, or change packages",
+              "testing": "Write or extend tests",
+              "documentation": "Write or repair documentation",
+              "coding": "Implement, fix, or refactor code"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-00-0",
+      "source_group": "authored/triage/00",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "ModuleNotFoundError: No module named requests",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-00-1",
+      "source_group": "authored/triage/00",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "Observed console diagnostic: ModuleNotFoundError: No module named requests",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-01-0",
+      "source_group": "authored/triage/01",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "SyntaxError: invalid syntax at parser.py line 12",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-01-1",
+      "source_group": "authored/triage/01",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "Observed console diagnostic: SyntaxError: invalid syntax at parser.py line 12",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-02-0",
+      "source_group": "authored/triage/02",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "AssertionError: expected 4, received 5",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-02-1",
+      "source_group": "authored/triage/02",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Observed console diagnostic: AssertionError: expected 4, received 5",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-03-0",
+      "source_group": "authored/triage/03",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "PermissionError: access denied opening output.txt",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-03-1",
+      "source_group": "authored/triage/03",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Observed console diagnostic: PermissionError: access denied opening output.txt",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-04-0",
+      "source_group": "authored/triage/04",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "ConnectionError: DNS name resolution failed",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-04-1",
+      "source_group": "authored/triage/04",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Observed console diagnostic: ConnectionError: DNS name resolution failed",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-05-0",
+      "source_group": "authored/triage/05",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Process exited with code 1 without a diagnostic.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-05-1",
+      "source_group": "authored/triage/05",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Observed console diagnostic: Process exited with code 1 without a diagnostic.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-06-0",
+      "source_group": "authored/triage/06",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "ImportError: cannot import name Client from library",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-06-1",
+      "source_group": "authored/triage/06",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "Observed console diagnostic: ImportError: cannot import name Client from library",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-07-0",
+      "source_group": "authored/triage/07",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "IndentationError: expected an indented block",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-07-1",
+      "source_group": "authored/triage/07",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "Observed console diagnostic: IndentationError: expected an indented block",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-08-0",
+      "source_group": "authored/triage/08",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "FAILED test_cart_total: assert 19 == 20",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-08-1",
+      "source_group": "authored/triage/08",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Observed console diagnostic: FAILED test_cart_total: assert 19 == 20",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-09-0",
+      "source_group": "authored/triage/09",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "EACCES: permission denied, mkdir /restricted/cache",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-09-1",
+      "source_group": "authored/triage/09",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Observed console diagnostic: EACCES: permission denied, mkdir /restricted/cache",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-10-0",
+      "source_group": "authored/triage/10",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "ECONNREFUSED connecting to localhost:8080",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-10-1",
+      "source_group": "authored/triage/10",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Observed console diagnostic: ECONNREFUSED connecting to localhost:8080",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-11-0",
+      "source_group": "authored/triage/11",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Build failed; no console output was captured.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-11-1",
+      "source_group": "authored/triage/11",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Observed console diagnostic: Build failed; no console output was captured.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-12-0",
+      "source_group": "authored/triage/12",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "npm ERR! ERESOLVE unable to resolve dependency tree",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-12-1",
+      "source_group": "authored/triage/12",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "Observed console diagnostic: npm ERR! ERESOLVE unable to resolve dependency tree",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-13-0",
+      "source_group": "authored/triage/13",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "error TS1005: semicolon expected",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-13-1",
+      "source_group": "authored/triage/13",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "Observed console diagnostic: error TS1005: semicolon expected",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-14-0",
+      "source_group": "authored/triage/14",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Expected status 200 but received 400 in unit test",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-14-1",
+      "source_group": "authored/triage/14",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Observed console diagnostic: Expected status 200 but received 400 in unit test",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-15-0",
+      "source_group": "authored/triage/15",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Operation not permitted writing the protected directory",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-15-1",
+      "source_group": "authored/triage/15",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Observed console diagnostic: Operation not permitted writing the protected directory",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-16-0",
+      "source_group": "authored/triage/16",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "TLS certificate verification failed for the service",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-16-1",
+      "source_group": "authored/triage/16",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Observed console diagnostic: TLS certificate verification failed for the service",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-17-0",
+      "source_group": "authored/triage/17",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Killed: process terminated externally.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-17-1",
+      "source_group": "authored/triage/17",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Observed console diagnostic: Killed: process terminated externally.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-18-0",
+      "source_group": "authored/triage/18",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "error: package foo requires a newer compiler",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-18-1",
+      "source_group": "authored/triage/18",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "Observed console diagnostic: error: package foo requires a newer compiler",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-19-0",
+      "source_group": "authored/triage/19",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "SyntaxError: unexpected token }",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-19-1",
+      "source_group": "authored/triage/19",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "Observed console diagnostic: SyntaxError: unexpected token }",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-20-0",
+      "source_group": "authored/triage/20",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "AssertionError: arrays are not equal",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-20-1",
+      "source_group": "authored/triage/20",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Observed console diagnostic: AssertionError: arrays are not equal",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-21-0",
+      "source_group": "authored/triage/21",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "error: denied access to the destination file",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-21-1",
+      "source_group": "authored/triage/21",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Observed console diagnostic: error: denied access to the destination file",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-22-0",
+      "source_group": "authored/triage/22",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Connection timed out fetching the remote endpoint",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-22-1",
+      "source_group": "authored/triage/22",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Observed console diagnostic: Connection timed out fetching the remote endpoint",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-23-0",
+      "source_group": "authored/triage/23",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Internal error with no further details.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-23-1",
+      "source_group": "authored/triage/23",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Observed console diagnostic: Internal error with no further details.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-24-0",
+      "source_group": "authored/triage/24",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "pip: No matching distribution found for unavailable_package",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-24-1",
+      "source_group": "authored/triage/24",
+      "split": "development",
+      "workload": "triage",
+      "expected": "dependency",
+      "request": {
+        "state": "Observed console diagnostic: pip: No matching distribution found for unavailable_package",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-25-0",
+      "source_group": "authored/triage/25",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "SyntaxError: unterminated string literal",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-25-1",
+      "source_group": "authored/triage/25",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "syntax",
+      "request": {
+        "state": "Observed console diagnostic: SyntaxError: unterminated string literal",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-26-0",
+      "source_group": "authored/triage/26",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Test failed: expected true but got false",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-26-1",
+      "source_group": "authored/triage/26",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "assertion",
+      "request": {
+        "state": "Observed console diagnostic: Test failed: expected true but got false",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-27-0",
+      "source_group": "authored/triage/27",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "OSError: permission denied reading fixture.dat",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-27-1",
+      "source_group": "authored/triage/27",
+      "split": "development",
+      "workload": "triage",
+      "expected": "permission",
+      "request": {
+        "state": "Observed console diagnostic: OSError: permission denied reading fixture.dat",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-28-0",
+      "source_group": "authored/triage/28",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "HTTP 503 Service Unavailable from dependency registry",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-28-1",
+      "source_group": "authored/triage/28",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "network",
+      "request": {
+        "state": "Observed console diagnostic: HTTP 503 Service Unavailable from dependency registry",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-29-0",
+      "source_group": "authored/triage/29",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Unexpected failure; cause is unknown.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "dependency": "Missing or incompatible package or toolchain",
+              "syntax": "Source parse or indentation error",
+              "assertion": "Test expectation mismatch",
+              "permission": "Access denied by filesystem or operating system",
+              "network": "Connectivity, TLS, or remote service failure",
+              "other": "Insufficient evidence or another cause"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "triage-29-1",
+      "source_group": "authored/triage/29",
+      "split": "heldout",
+      "workload": "triage",
+      "expected": "other",
+      "request": {
+        "state": "Observed console diagnostic: Unexpected failure; cause is unknown.",
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Classify the primary cause shown by the diagnostic. Choose other when the cause is not established.",
+            "criteria": {
+              "other": "Insufficient evidence or another cause",
+              "network": "Connectivity, TLS, or remote service failure",
+              "permission": "Access denied by filesystem or operating system",
+              "assertion": "Test expectation mismatch",
+              "syntax": "Source parse or indentation error",
+              "dependency": "Missing or incompatible package or toolchain"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-00-A-0",
+      "source_group": "authored/relevance/00",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix coupon expiry comparison.",
+          "excerpt": "The coupon check compares expires_at to now."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-00-A-1",
+      "source_group": "authored/relevance/00",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix coupon expiry comparison.",
+          "excerpt": "The coupon check compares expires_at to now."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-00-B-0",
+      "source_group": "authored/relevance/00",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix coupon expiry comparison.",
+          "excerpt": "The logger writes timestamped messages."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-00-B-1",
+      "source_group": "authored/relevance/00",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix coupon expiry comparison.",
+          "excerpt": "The logger writes timestamped messages."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-01-A-0",
+      "source_group": "authored/relevance/01",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair CSV quote escaping.",
+          "excerpt": "CSV fields escape embedded double quotes before writing."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-01-A-1",
+      "source_group": "authored/relevance/01",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair CSV quote escaping.",
+          "excerpt": "CSV fields escape embedded double quotes before writing."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-01-B-0",
+      "source_group": "authored/relevance/01",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair CSV quote escaping.",
+          "excerpt": "The HTTP client retries network failures."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-01-B-1",
+      "source_group": "authored/relevance/01",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair CSV quote escaping.",
+          "excerpt": "The HTTP client retries network failures."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-02-A-0",
+      "source_group": "authored/relevance/02",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Handle empty cart totals.",
+          "excerpt": "Cart total sums prices and returns zero for no entries."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-02-A-1",
+      "source_group": "authored/relevance/02",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Handle empty cart totals.",
+          "excerpt": "Cart total sums prices and returns zero for no entries."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-02-B-0",
+      "source_group": "authored/relevance/02",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Handle empty cart totals.",
+          "excerpt": "The settings loader reads the server port."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-02-B-1",
+      "source_group": "authored/relevance/02",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Handle empty cart totals.",
+          "excerpt": "The settings loader reads the server port."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-03-A-0",
+      "source_group": "authored/relevance/03",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find retry delay calculation.",
+          "excerpt": "Retry delay multiplies base_delay by the attempt number."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-03-A-1",
+      "source_group": "authored/relevance/03",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find retry delay calculation.",
+          "excerpt": "Retry delay multiplies base_delay by the attempt number."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-03-B-0",
+      "source_group": "authored/relevance/03",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find retry delay calculation.",
+          "excerpt": "The renderer sets a background color."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-03-B-1",
+      "source_group": "authored/relevance/03",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find retry delay calculation.",
+          "excerpt": "The renderer sets a background color."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-04-A-0",
+      "source_group": "authored/relevance/04",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix timezone conversion.",
+          "excerpt": "parse_timestamp normalizes timezone offsets to UTC."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-04-A-1",
+      "source_group": "authored/relevance/04",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix timezone conversion.",
+          "excerpt": "parse_timestamp normalizes timezone offsets to UTC."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-04-B-0",
+      "source_group": "authored/relevance/04",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix timezone conversion.",
+          "excerpt": "The pagination helper increments page numbers."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-04-B-1",
+      "source_group": "authored/relevance/04",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix timezone conversion.",
+          "excerpt": "The pagination helper increments page numbers."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-05-A-0",
+      "source_group": "authored/relevance/05",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Update supported Python versions.",
+          "excerpt": "The CI matrix lists supported Python releases."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-05-A-1",
+      "source_group": "authored/relevance/05",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Update supported Python versions.",
+          "excerpt": "The CI matrix lists supported Python releases."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-05-B-0",
+      "source_group": "authored/relevance/05",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Update supported Python versions.",
+          "excerpt": "The image encoder sets JPEG quality."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-05-B-1",
+      "source_group": "authored/relevance/05",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Update supported Python versions.",
+          "excerpt": "The image encoder sets JPEG quality."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-06-A-0",
+      "source_group": "authored/relevance/06",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair pagination cursor handling.",
+          "excerpt": "The listing endpoint passes cursor to the next query."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-06-A-1",
+      "source_group": "authored/relevance/06",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair pagination cursor handling.",
+          "excerpt": "The listing endpoint passes cursor to the next query."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-06-B-0",
+      "source_group": "authored/relevance/06",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair pagination cursor handling.",
+          "excerpt": "The authentication helper hashes passwords."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-06-B-1",
+      "source_group": "authored/relevance/06",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair pagination cursor handling.",
+          "excerpt": "The authentication helper hashes passwords."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-07-A-0",
+      "source_group": "authored/relevance/07",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix UTF-8 decoding.",
+          "excerpt": "decode_body decodes bytes using the UTF-8 codec."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-07-A-1",
+      "source_group": "authored/relevance/07",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix UTF-8 decoding.",
+          "excerpt": "decode_body decodes bytes using the UTF-8 codec."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-07-B-0",
+      "source_group": "authored/relevance/07",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix UTF-8 decoding.",
+          "excerpt": "The filesystem helper removes temporary files."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-07-B-1",
+      "source_group": "authored/relevance/07",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix UTF-8 decoding.",
+          "excerpt": "The filesystem helper removes temporary files."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-08-A-0",
+      "source_group": "authored/relevance/08",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Identify payment callback validation.",
+          "excerpt": "verify_callback checks the payment signature."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-08-A-1",
+      "source_group": "authored/relevance/08",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Identify payment callback validation.",
+          "excerpt": "verify_callback checks the payment signature."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-08-B-0",
+      "source_group": "authored/relevance/08",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Identify payment callback validation.",
+          "excerpt": "The search index tokenizes document titles."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-08-B-1",
+      "source_group": "authored/relevance/08",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Identify payment callback validation.",
+          "excerpt": "The search index tokenizes document titles."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-09-A-0",
+      "source_group": "authored/relevance/09",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find log level configuration.",
+          "excerpt": "Settings expose a LOG_LEVEL environment variable."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-09-A-1",
+      "source_group": "authored/relevance/09",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find log level configuration.",
+          "excerpt": "Settings expose a LOG_LEVEL environment variable."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-09-B-0",
+      "source_group": "authored/relevance/09",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find log level configuration.",
+          "excerpt": "The invoice generator calculates sales tax."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-09-B-1",
+      "source_group": "authored/relevance/09",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find log level configuration.",
+          "excerpt": "The invoice generator calculates sales tax."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-10-A-0",
+      "source_group": "authored/relevance/10",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair timeout propagation.",
+          "excerpt": "The HTTP wrapper passes timeout to each request."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-10-A-1",
+      "source_group": "authored/relevance/10",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair timeout propagation.",
+          "excerpt": "The HTTP wrapper passes timeout to each request."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-10-B-0",
+      "source_group": "authored/relevance/10",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair timeout propagation.",
+          "excerpt": "The stylesheet controls button padding."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-10-B-1",
+      "source_group": "authored/relevance/10",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair timeout propagation.",
+          "excerpt": "The stylesheet controls button padding."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-11-A-0",
+      "source_group": "authored/relevance/11",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find SQLite transaction rollback.",
+          "excerpt": "The database context rolls back a failed transaction."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-11-A-1",
+      "source_group": "authored/relevance/11",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Find SQLite transaction rollback.",
+          "excerpt": "The database context rolls back a failed transaction."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-11-B-0",
+      "source_group": "authored/relevance/11",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find SQLite transaction rollback.",
+          "excerpt": "The DNS cache stores host addresses."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-11-B-1",
+      "source_group": "authored/relevance/11",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Find SQLite transaction rollback.",
+          "excerpt": "The DNS cache stores host addresses."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-12-A-0",
+      "source_group": "authored/relevance/12",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix decimal rounding in invoices.",
+          "excerpt": "Invoice totals round Decimal values to two places."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-12-A-1",
+      "source_group": "authored/relevance/12",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Fix decimal rounding in invoices.",
+          "excerpt": "Invoice totals round Decimal values to two places."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-12-B-0",
+      "source_group": "authored/relevance/12",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix decimal rounding in invoices.",
+          "excerpt": "The routing layer matches URL prefixes."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-12-B-1",
+      "source_group": "authored/relevance/12",
+      "split": "development",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Fix decimal rounding in invoices.",
+          "excerpt": "The routing layer matches URL prefixes."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-13-A-0",
+      "source_group": "authored/relevance/13",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Locate cache eviction logic.",
+          "excerpt": "The cache removes the oldest entry when capacity is exceeded."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-13-A-1",
+      "source_group": "authored/relevance/13",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Locate cache eviction logic.",
+          "excerpt": "The cache removes the oldest entry when capacity is exceeded."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-13-B-0",
+      "source_group": "authored/relevance/13",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Locate cache eviction logic.",
+          "excerpt": "The CLI parser reads an output filename."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-13-B-1",
+      "source_group": "authored/relevance/13",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Locate cache eviction logic.",
+          "excerpt": "The CLI parser reads an output filename."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-14-A-0",
+      "source_group": "authored/relevance/14",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair symlink boundary checks.",
+          "excerpt": "File reads resolve symlinks before checking the repository boundary."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-14-A-1",
+      "source_group": "authored/relevance/14",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "A",
+      "request": {
+        "state": {
+          "task": "Repair symlink boundary checks.",
+          "excerpt": "File reads resolve symlinks before checking the repository boundary."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-14-B-0",
+      "source_group": "authored/relevance/14",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair symlink boundary checks.",
+          "excerpt": "The scheduler sorts jobs by priority."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "A": "Excerpt directly helps perform the task",
+              "B": "Excerpt is unrelated to the task"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "relevance-14-B-1",
+      "source_group": "authored/relevance/14",
+      "split": "heldout",
+      "workload": "relevance",
+      "expected": "B",
+      "request": {
+        "state": {
+          "task": "Repair symlink boundary checks.",
+          "excerpt": "The scheduler sorts jobs by priority."
+        },
+        "model": "english",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Does the excerpt provide information directly needed to perform the task?",
+            "criteria": {
+              "B": "Excerpt is unrelated to the task",
+              "A": "Excerpt directly helps perform the task"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

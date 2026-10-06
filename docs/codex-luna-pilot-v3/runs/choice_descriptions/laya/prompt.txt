@@ -1,0 +1,6 @@
+Choice requests with dictionary criteria currently accept empty or whitespace-only option descriptions. Find the shared validation path and reject these with ValueError before model inference. Preserve list criteria and valid dictionary descriptions; leave score and noul behavior unchanged.
+Make the smallest working change and add a regression check in tests/test_cli.py.
+Only modify src/cam_laya_cli/*.py and tests/test_cli.py. Do not modify other files,
+install packages, download models, use the network, delegate, or change Git history.
+Run PYTHONPATH=src /Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/.venv/bin/python -m unittest discover -s tests -v, then report changes and test result.
+Use that absolute Python interpreter for Python commands; login shells reset PATH.

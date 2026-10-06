@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/docs/codex-luna-pilot/checks.py", line 119, in <module>
+    check(sys.argv[1])
+  File "/Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/docs/codex-luna-pilot/checks.py", line 22, in check
+    cli.main()
+  File "/Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/docs/codex-luna-pilot/runs/warm_timeout/baseline/workspace/src/cam_laya_cli/cli.py", line 211, in main
+    emit(result)
+  File "/Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/docs/codex-luna-pilot/runs/warm_timeout/baseline/workspace/src/cam_laya_cli/cli.py", line 18, in emit
+    sys.stdout.buffer.write(encode(value))
+    ^^^^^^^^^^^^^^^^^
+AttributeError: '_io.StringIO' object has no attribute 'buffer'

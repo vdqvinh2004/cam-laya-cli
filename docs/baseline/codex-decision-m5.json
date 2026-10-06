@@ -1,0 +1,139 @@
+{
+  "model": "aac6fef/laya-mlx",
+  "cases": [
+    {
+      "id": "failed_test",
+      "policy": "test_decision",
+      "expected": "debug_failure",
+      "simple_rule": "debug_failure",
+      "simple_correct": true,
+      "laya_choice": "debug_failure",
+      "laya_correct": true,
+      "laya_reason": "failed_test",
+      "latency_ms": 0.03
+    },
+    {
+      "id": "docs_only",
+      "policy": "test_decision",
+      "expected": "no_test_needed",
+      "simple_rule": "no_test_needed",
+      "simple_correct": true,
+      "laya_choice": "no_test_needed",
+      "laya_correct": true,
+      "laya_reason": null,
+      "latency_ms": 45517.83
+    },
+    {
+      "id": "small_code",
+      "policy": "test_decision",
+      "expected": "targeted_test",
+      "simple_rule": "targeted_test",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 80.25
+    },
+    {
+      "id": "many_code_files",
+      "policy": "test_decision",
+      "expected": "full_suite",
+      "simple_rule": "full_suite",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 49.94
+    },
+    {
+      "id": "no_tests",
+      "policy": "test_decision",
+      "expected": "ask_user",
+      "simple_rule": "ask_user",
+      "simple_correct": true,
+      "laya_choice": "no_test_needed",
+      "laya_correct": false,
+      "laya_reason": null,
+      "latency_ms": 42.83
+    },
+    {
+      "id": "review_untested",
+      "policy": "review_decision",
+      "expected": "run_tests",
+      "simple_rule": "run_tests",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 39.54
+    },
+    {
+      "id": "review_passed",
+      "policy": "review_decision",
+      "expected": "self_review",
+      "simple_rule": "self_review",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 38.6
+    },
+    {
+      "id": "review_high_risk",
+      "policy": "review_decision",
+      "expected": "request_human_review",
+      "simple_rule": "request_human_review",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 38.52
+    },
+    {
+      "id": "review_no_changes",
+      "policy": "review_decision",
+      "expected": "continue",
+      "simple_rule": "continue",
+      "simple_correct": true,
+      "laya_choice": "defer_to_agent",
+      "laya_correct": false,
+      "laya_reason": "low_confidence",
+      "latency_ms": 38.64
+    },
+    {
+      "id": "action_failed",
+      "policy": "next_action",
+      "expected": "debug",
+      "simple_rule": "debug",
+      "simple_correct": true,
+      "laya_choice": "debug",
+      "laya_correct": true,
+      "laya_reason": "failed_test",
+      "latency_ms": 0.03
+    },
+    {
+      "id": "action_edited",
+      "policy": "next_action",
+      "expected": "test",
+      "simple_rule": "test",
+      "simple_correct": true,
+      "laya_choice": "test",
+      "laya_correct": true,
+      "laya_reason": null,
+      "latency_ms": 39.87
+    },
+    {
+      "id": "action_passed",
+      "policy": "next_action",
+      "expected": "review",
+      "simple_rule": "review",
+      "simple_correct": true,
+      "laya_choice": "test",
+      "laya_correct": false,
+      "laya_reason": null,
+      "latency_ms": 39.64
+    }
+  ],
+  "simple_correct": 12,
+  "laya_correct": 4
+}

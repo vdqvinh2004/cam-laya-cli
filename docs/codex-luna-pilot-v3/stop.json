@@ -1,0 +1,12 @@
+{
+  "reason": "completed_run_uncached_input_token_stop",
+  "limit": 150000,
+  "observed": 157992,
+  "check": "between runs; completed-run stop, not per-request spending cap",
+  "runs": 7,
+  "unlaunched_tasks": [
+    "integration_modified baseline",
+    "strict_saved_json both profiles",
+    "batch_error_ids both profiles"
+  ]
+}

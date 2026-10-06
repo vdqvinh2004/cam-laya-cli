@@ -1,0 +1,11 @@
+cam-laya-cli
+Copyright 2026 CAM contributors
+
+src/cam_laya_cli/presets.py and baseline benchmark fixtures are adapted from
+cam-laya-mcp (https://github.com/vdqvinh2004/cam-laya-mcp), revision e73ff6e,
+licensed under Apache License 2.0. The original guard parser and deterministic
+policy behavior are preserved.
+
+Laya model weights are by Convai Innovations and upstream contributors.
+The optional laya-mlx runtime is an independent Apache-2.0 MLX port by mizorewww.
+Their checkpoint and runtime attribution remains in their respective packages.

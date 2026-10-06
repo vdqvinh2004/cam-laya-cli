@@ -1,0 +1,16 @@
+test_custom_types_and_abstention (test_cli.Decisions.test_custom_types_and_abstention) ... ok
+test_diagnostics_abstain_and_unavailable_never_authorizes (test_cli.Decisions.test_diagnostics_abstain_and_unavailable_never_authorizes) ... ok
+test_guard_corpus_and_legacy_choices (test_cli.Decisions.test_guard_corpus_and_legacy_choices) ... ok
+test_input_boundaries (test_cli.Decisions.test_input_boundaries) ... ok
+test_invalid_model_output_and_temperature_gate (test_cli.Decisions.test_invalid_model_output_and_temperature_gate) ... ok
+test_owned_install_merge_and_uninstall (test_cli.Integration.test_owned_install_merge_and_uninstall) ... ok
+test_unowned_or_modified_assets_survive (test_cli.Integration.test_unowned_or_modified_assets_survive) ... ok
+test_diagnostics_do_not_start_worker (test_cli.Worker.test_diagnostics_do_not_start_worker) ... ok
+test_real_process_reuse_batch_and_parallel_start (test_cli.Worker.test_real_process_reuse_batch_and_parallel_start) ... ok
+test_socket_permissions_and_large_record_recovery (test_cli.Worker.test_socket_permissions_and_large_record_recovery) ... ok
+test_warm_timeout_validation_and_forwarding (test_cli.Worker.test_warm_timeout_validation_and_forwarding) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 6.674s
+
+OK

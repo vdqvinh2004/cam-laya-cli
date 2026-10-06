@@ -1,0 +1,17 @@
+{
+  "provenance": "Additional negation/paraphrase diagnostics authored after the initial synthetic screen. Not part of the frozen 180-case held-out study; no threshold tuning or deployment claim.",
+  "cases": [
+    {"id":"negation-1","state":"Do not cancel my account. Keep it active.","expected":"B"},
+    {"id":"negation-2","state":"I am not asking to close the account; I need the password reset.","expected":"B"},
+    {"id":"negation-3","state":"Please retain my membership. No cancellation is requested.","expected":"B"},
+    {"id":"negation-4","state":"I considered cancelling but decided to keep the account.","expected":"B"},
+    {"id":"negation-5","state":"Don't terminate the subscription; explain how renewal works.","expected":"B"},
+    {"id":"negation-6","state":"I never requested cancellation. Leave the account open.","expected":"B"},
+    {"id":"control-1","state":"Please cancel my account now.","expected":"A"},
+    {"id":"control-2","state":"Close the account and end my membership.","expected":"A"},
+    {"id":"paraphrase-1","state":"I want to stop being a subscriber.","expected":"A"},
+    {"id":"paraphrase-2","state":"End my subscription at the next renewal date.","expected":"A"},
+    {"id":"paraphrase-3","state":"Keep providing the service; I want to remain a member.","expected":"B"},
+    {"id":"paraphrase-4","state":"My membership should continue without interruption.","expected":"B"}
+  ]
+}

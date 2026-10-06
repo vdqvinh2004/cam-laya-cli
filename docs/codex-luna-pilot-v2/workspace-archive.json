@@ -1,0 +1,527 @@
+{
+  "archive": "workspaces.zip",
+  "sha256": "671f4aa7824a5864e8c6cecbe6bfbc663f38fae0f5545fd708062ae50fe3f902",
+  "members": [
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/benchmarks/decision_cases.json",
+      "kind": "file",
+      "sha256": "694f55dcac9b3defd622cf8e96a2a6abe8fbdb6de85cedc21f9e49944b9a4239",
+      "bytes": 1952
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/benchmarks/guard_cases.json",
+      "kind": "file",
+      "sha256": "cd6ebc1ecc28f415459ded138e5226b2b104a6cf5f4e05ff2b6db5449f1ea0ff",
+      "bytes": 46364
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/pyproject.toml",
+      "kind": "file",
+      "sha256": "d4cfcb0e3c2a439488ea29cf73b0d1bbf246f9fc5f49a2266122403aed6a8eb5",
+      "bytes": 693
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/__init__.py",
+      "kind": "file",
+      "sha256": "8b9c1527f10cf3ae3e259b5cdf277ea61c0aea19a6a6b7fdd7e858985e9116e4",
+      "bytes": 86
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/__main__.py",
+      "kind": "file",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/benchmark.py",
+      "kind": "file",
+      "sha256": "5726b795a78a85245903a3a41e699ee527d4c676c6b0790df71f66bbfc72fd27",
+      "bytes": 4382
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/cli.py",
+      "kind": "file",
+      "sha256": "c15b1abbb987a6db67cc47e7d9516c7d1348346959675e8b0dc20da4c42be035",
+      "bytes": 9346
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/config.py",
+      "kind": "file",
+      "sha256": "ed8234f5abb2236b6d36d61ec6296513600842bace51966a506b7eae3db05ca0",
+      "bytes": 2308
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/engine.py",
+      "kind": "file",
+      "sha256": "5f9f258fe516c9d0268d4386f53f6d3c79663dba31087852a585d0d1ce9e2214",
+      "bytes": 13894
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/integrations.py",
+      "kind": "file",
+      "sha256": "c174da990aeb08af6c5cf90dced705d60857a8d0f5566184bdcef5163b14bad1",
+      "bytes": 7465
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/presets.py",
+      "kind": "file",
+      "sha256": "2ed1793dda102057600f9214c9a60fac29a31221501be27f58b0c5441ea96c5c",
+      "bytes": 7532
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/src/cam_laya_cli/worker.py",
+      "kind": "file",
+      "sha256": "4961b3b8d5b42140e732b68c674b8030b2e8c43c24cf3ed6eba55c36068af497",
+      "bytes": 10464
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/workspace/tests/test_cli.py",
+      "kind": "file",
+      "sha256": "47cec18c11fe0501561261d645143c674f975d609efc54788012c4873be71f00",
+      "bytes": 11910
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/benchmarks/decision_cases.json",
+      "kind": "file",
+      "sha256": "694f55dcac9b3defd622cf8e96a2a6abe8fbdb6de85cedc21f9e49944b9a4239",
+      "bytes": 1952
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/benchmarks/guard_cases.json",
+      "kind": "file",
+      "sha256": "cd6ebc1ecc28f415459ded138e5226b2b104a6cf5f4e05ff2b6db5449f1ea0ff",
+      "bytes": 46364
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/pyproject.toml",
+      "kind": "file",
+      "sha256": "d4cfcb0e3c2a439488ea29cf73b0d1bbf246f9fc5f49a2266122403aed6a8eb5",
+      "bytes": 693
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/__init__.py",
+      "kind": "file",
+      "sha256": "8b9c1527f10cf3ae3e259b5cdf277ea61c0aea19a6a6b7fdd7e858985e9116e4",
+      "bytes": 86
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/__main__.py",
+      "kind": "file",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/benchmark.py",
+      "kind": "file",
+      "sha256": "5726b795a78a85245903a3a41e699ee527d4c676c6b0790df71f66bbfc72fd27",
+      "bytes": 4382
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/cli.py",
+      "kind": "file",
+      "sha256": "c15b1abbb987a6db67cc47e7d9516c7d1348346959675e8b0dc20da4c42be035",
+      "bytes": 9346
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/config.py",
+      "kind": "file",
+      "sha256": "ed8234f5abb2236b6d36d61ec6296513600842bace51966a506b7eae3db05ca0",
+      "bytes": 2308
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/engine.py",
+      "kind": "file",
+      "sha256": "5f9f258fe516c9d0268d4386f53f6d3c79663dba31087852a585d0d1ce9e2214",
+      "bytes": 13894
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/integrations.py",
+      "kind": "file",
+      "sha256": "c174da990aeb08af6c5cf90dced705d60857a8d0f5566184bdcef5163b14bad1",
+      "bytes": 7465
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/presets.py",
+      "kind": "file",
+      "sha256": "2ed1793dda102057600f9214c9a60fac29a31221501be27f58b0c5441ea96c5c",
+      "bytes": 7532
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/src/cam_laya_cli/worker.py",
+      "kind": "file",
+      "sha256": "a1b0ad5a59a8ada1428720fc8b08520f782d82aef15e85cd76a8cd70e148e865",
+      "bytes": 10705
+    },
+    {
+      "member": "runs/client_timeout/baseline/workspace/tests/test_cli.py",
+      "kind": "file",
+      "sha256": "70e66478a47c8808570f64b32da991d0b8999973e66bc071fd0b6dfed4c3faea",
+      "bytes": 12542
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/.agents/skills/cam-laya/SKILL.md",
+      "kind": "file",
+      "sha256": "d7914da38ccff5988020a39896e25c6f46d4a10e1061ea27144f2bd4e0157d21",
+      "bytes": 2155
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/benchmarks/decision_cases.json",
+      "kind": "file",
+      "sha256": "694f55dcac9b3defd622cf8e96a2a6abe8fbdb6de85cedc21f9e49944b9a4239",
+      "bytes": 1952
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/benchmarks/guard_cases.json",
+      "kind": "file",
+      "sha256": "cd6ebc1ecc28f415459ded138e5226b2b104a6cf5f4e05ff2b6db5449f1ea0ff",
+      "bytes": 46364
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/pyproject.toml",
+      "kind": "file",
+      "sha256": "d4cfcb0e3c2a439488ea29cf73b0d1bbf246f9fc5f49a2266122403aed6a8eb5",
+      "bytes": 693
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/__init__.py",
+      "kind": "file",
+      "sha256": "8b9c1527f10cf3ae3e259b5cdf277ea61c0aea19a6a6b7fdd7e858985e9116e4",
+      "bytes": 86
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/__main__.py",
+      "kind": "file",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/benchmark.py",
+      "kind": "file",
+      "sha256": "5726b795a78a85245903a3a41e699ee527d4c676c6b0790df71f66bbfc72fd27",
+      "bytes": 4382
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/cli.py",
+      "kind": "file",
+      "sha256": "c15b1abbb987a6db67cc47e7d9516c7d1348346959675e8b0dc20da4c42be035",
+      "bytes": 9346
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/config.py",
+      "kind": "file",
+      "sha256": "ed8234f5abb2236b6d36d61ec6296513600842bace51966a506b7eae3db05ca0",
+      "bytes": 2308
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/engine.py",
+      "kind": "file",
+      "sha256": "5f9f258fe516c9d0268d4386f53f6d3c79663dba31087852a585d0d1ce9e2214",
+      "bytes": 13894
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/integrations.py",
+      "kind": "file",
+      "sha256": "c174da990aeb08af6c5cf90dced705d60857a8d0f5566184bdcef5163b14bad1",
+      "bytes": 7465
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/presets.py",
+      "kind": "file",
+      "sha256": "2ed1793dda102057600f9214c9a60fac29a31221501be27f58b0c5441ea96c5c",
+      "bytes": 7532
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/src/cam_laya_cli/worker.py",
+      "kind": "file",
+      "sha256": "513a6f1ddac7b6cbd993aae444a7dd9986715107d4c76392d0d0c92502608a0d",
+      "bytes": 10754
+    },
+    {
+      "member": "runs/client_timeout/laya/workspace/tests/test_cli.py",
+      "kind": "file",
+      "sha256": "6779ebec67fd2f17a66d902c0da23a30e0a3f5a4c87bca73199ed55c3c114a26",
+      "bytes": 12380
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/benchmarks/decision_cases.json",
+      "kind": "file",
+      "sha256": "694f55dcac9b3defd622cf8e96a2a6abe8fbdb6de85cedc21f9e49944b9a4239",
+      "bytes": 1952
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/benchmarks/guard_cases.json",
+      "kind": "file",
+      "sha256": "cd6ebc1ecc28f415459ded138e5226b2b104a6cf5f4e05ff2b6db5449f1ea0ff",
+      "bytes": 46364
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/pyproject.toml",
+      "kind": "file",
+      "sha256": "d4cfcb0e3c2a439488ea29cf73b0d1bbf246f9fc5f49a2266122403aed6a8eb5",
+      "bytes": 693
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/__init__.py",
+      "kind": "file",
+      "sha256": "8b9c1527f10cf3ae3e259b5cdf277ea61c0aea19a6a6b7fdd7e858985e9116e4",
+      "bytes": 86
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/__main__.py",
+      "kind": "file",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/benchmark.py",
+      "kind": "file",
+      "sha256": "5726b795a78a85245903a3a41e699ee527d4c676c6b0790df71f66bbfc72fd27",
+      "bytes": 4382
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/cli.py",
+      "kind": "file",
+      "sha256": "e55eab27fa5eefdbbfc62dc37ff2bd1d6f6a2f40d4e2d245356dcd80b27ea4ee",
+      "bytes": 9459
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/config.py",
+      "kind": "file",
+      "sha256": "ed8234f5abb2236b6d36d61ec6296513600842bace51966a506b7eae3db05ca0",
+      "bytes": 2308
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/engine.py",
+      "kind": "file",
+      "sha256": "5f9f258fe516c9d0268d4386f53f6d3c79663dba31087852a585d0d1ce9e2214",
+      "bytes": 13894
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/integrations.py",
+      "kind": "file",
+      "sha256": "c174da990aeb08af6c5cf90dced705d60857a8d0f5566184bdcef5163b14bad1",
+      "bytes": 7465
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/presets.py",
+      "kind": "file",
+      "sha256": "2ed1793dda102057600f9214c9a60fac29a31221501be27f58b0c5441ea96c5c",
+      "bytes": 7532
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/src/cam_laya_cli/worker.py",
+      "kind": "file",
+      "sha256": "4961b3b8d5b42140e732b68c674b8030b2e8c43c24cf3ed6eba55c36068af497",
+      "bytes": 10464
+    },
+    {
+      "member": "runs/warm_timeout/baseline/workspace/tests/test_cli.py",
+      "kind": "file",
+      "sha256": "0047b2a71fa5c4cdda15d26c076a21c8205091c9aa42e2777981936f5614f45e",
+      "bytes": 13269
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/.agents/skills/cam-laya/SKILL.md",
+      "kind": "file",
+      "sha256": "1c29b1e6b9d2620518bec8fe7e5e4a6f99503c06647313ac00c5df92624cd3db",
+      "bytes": 2153
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/benchmarks/decision_cases.json",
+      "kind": "file",
+      "sha256": "694f55dcac9b3defd622cf8e96a2a6abe8fbdb6de85cedc21f9e49944b9a4239",
+      "bytes": 1952
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/benchmarks/guard_cases.json",
+      "kind": "file",
+      "sha256": "cd6ebc1ecc28f415459ded138e5226b2b104a6cf5f4e05ff2b6db5449f1ea0ff",
+      "bytes": 46364
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/pyproject.toml",
+      "kind": "file",
+      "sha256": "d4cfcb0e3c2a439488ea29cf73b0d1bbf246f9fc5f49a2266122403aed6a8eb5",
+      "bytes": 693
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/__init__.py",
+      "kind": "file",
+      "sha256": "8b9c1527f10cf3ae3e259b5cdf277ea61c0aea19a6a6b7fdd7e858985e9116e4",
+      "bytes": 86
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/__main__.py",
+      "kind": "file",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "bytes": 30
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/benchmark.py",
+      "kind": "file",
+      "sha256": "5726b795a78a85245903a3a41e699ee527d4c676c6b0790df71f66bbfc72fd27",
+      "bytes": 4382
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/cli.py",
+      "kind": "file",
+      "sha256": "291606ea2530f8cffcbb0f8d8ac58bfce6ecc55212d633aa114d58b51f56b679",
+      "bytes": 9459
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/config.py",
+      "kind": "file",
+      "sha256": "ed8234f5abb2236b6d36d61ec6296513600842bace51966a506b7eae3db05ca0",
+      "bytes": 2308
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/engine.py",
+      "kind": "file",
+      "sha256": "5f9f258fe516c9d0268d4386f53f6d3c79663dba31087852a585d0d1ce9e2214",
+      "bytes": 13894
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/integrations.py",
+      "kind": "file",
+      "sha256": "c174da990aeb08af6c5cf90dced705d60857a8d0f5566184bdcef5163b14bad1",
+      "bytes": 7465
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/presets.py",
+      "kind": "file",
+      "sha256": "2ed1793dda102057600f9214c9a60fac29a31221501be27f58b0c5441ea96c5c",
+      "bytes": 7532
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/src/cam_laya_cli/worker.py",
+      "kind": "file",
+      "sha256": "4961b3b8d5b42140e732b68c674b8030b2e8c43c24cf3ed6eba55c36068af497",
+      "bytes": 10464
+    },
+    {
+      "member": "runs/warm_timeout/laya/workspace/tests/test_cli.py",
+      "kind": "file",
+      "sha256": "6d3864a4df29f2446b7c2a7827d8d893d07935da412d2076aca9216799d89bb3",
+      "bytes": 13264
+    },
+    {
+      "member": "runs/choice_descriptions/baseline/bin/python3",
+      "kind": "symlink",
+      "sha256": "79a0b5f4d1c2f84dd602f767a77b25872bef9ae978c49b6bd684f202fe52f38d",
+      "bytes": 69
+    },
+    {
+      "member": "runs/client_timeout/baseline/bin/python3",
+      "kind": "symlink",
+      "sha256": "79a0b5f4d1c2f84dd602f767a77b25872bef9ae978c49b6bd684f202fe52f38d",
+      "bytes": 69
+    },
+    {
+      "member": "runs/client_timeout/laya/bin/cam-laya-cli",
+      "kind": "file",
+      "sha256": "eb85d11df0fdf73a6388bc2f27048964240f552f661ccc2472c589962b34a1b4",
+      "bytes": 898
+    },
+    {
+      "member": "runs/client_timeout/laya/bin/python3",
+      "kind": "symlink",
+      "sha256": "79a0b5f4d1c2f84dd602f767a77b25872bef9ae978c49b6bd684f202fe52f38d",
+      "bytes": 69
+    },
+    {
+      "member": "runs/warm_timeout/baseline/bin/python3",
+      "kind": "symlink",
+      "sha256": "79a0b5f4d1c2f84dd602f767a77b25872bef9ae978c49b6bd684f202fe52f38d",
+      "bytes": 69
+    },
+    {
+      "member": "runs/warm_timeout/laya/bin/cam-laya-cli",
+      "kind": "file",
+      "sha256": "4827b6ed2868f8522ca3b3d7fa6fea40bc087e63bc33aa737c88fafc5ab9d609",
+      "bytes": 896
+    },
+    {
+      "member": "runs/warm_timeout/laya/bin/python3",
+      "kind": "symlink",
+      "sha256": "79a0b5f4d1c2f84dd602f767a77b25872bef9ae978c49b6bd684f202fe52f38d",
+      "bytes": 69
+    }
+  ],
+  "removed_directories": [
+    "runs/choice_descriptions/baseline/workspace",
+    "runs/client_timeout/baseline/workspace",
+    "runs/client_timeout/laya/workspace",
+    "runs/warm_timeout/baseline/workspace",
+    "runs/warm_timeout/laya/workspace",
+    "runs/choice_descriptions/baseline/bin",
+    "runs/client_timeout/baseline/bin",
+    "runs/client_timeout/laya/bin",
+    "runs/warm_timeout/baseline/bin",
+    "runs/warm_timeout/laya/bin"
+  ],
+  "omitted_regenerable_metadata": [
+    ".git",
+    ".ruff_cache",
+    "__pycache__"
+  ]
+}

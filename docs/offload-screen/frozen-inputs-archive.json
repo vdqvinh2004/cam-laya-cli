@@ -1,0 +1,42 @@
+{
+  "archive": "frozen-inputs.zip",
+  "sha256": "f61d2caafbeae74aa1f4ee884ed6795cb573125903738692978848b1e98eaa57",
+  "members": [
+    {
+      "member": "README.md",
+      "kind": "file",
+      "sha256": "28fe6e996c612e16db8c974747fe56fe7297a75df3f6936fb2256e9148d7aad7",
+      "bytes": 5799
+    },
+    {
+      "member": "docs/local-results.md",
+      "kind": "file",
+      "sha256": "bf50afed432988671dfbbb3395b3c8259a6804c9d307cb2d54fa0df4dfc64a80",
+      "bytes": 8227
+    },
+    {
+      "member": "docs/evaluation.md",
+      "kind": "file",
+      "sha256": "e80e550b41e801f0324d6b76973b05447d48b05f76ac6b165d6b793e3fe9ccec",
+      "bytes": 5060
+    },
+    {
+      "member": "src/cam_laya_cli/assets/SKILL.md",
+      "kind": "file",
+      "sha256": "c878ebf027c43662688d9f0edff698ca8c08ba10989a04d20f7884c191e96496",
+      "bytes": 1926
+    },
+    {
+      "member": "docs/codex-luna-pilot/runs/warm_timeout/baseline/events.jsonl",
+      "kind": "file",
+      "sha256": "d67cbc31ed031dad54f1c34aa97771b6736c2fc4b7d1ce4b44d88de1b972874b",
+      "bytes": 56573
+    },
+    {
+      "member": "docs/codex-luna-pilot-v2/runs/warm_timeout/laya/events.jsonl",
+      "kind": "file",
+      "sha256": "089197989c28c44f43f2d00e501fcd32cc8e69ece9e9862e673846659f4ea282",
+      "bytes": 44552
+    }
+  ]
+}

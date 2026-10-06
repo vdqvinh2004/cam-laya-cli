@@ -1,0 +1,14 @@
+[
+  {"id":"failed_test","policy":"test_decision","state":{"last_test_result":"failed","current_phase":"testing","task_type":"debugging"},"expected":"debug_failure"},
+  {"id":"docs_only","policy":"test_decision","state":{"task_type":"documentation","changed_files":1,"tests_available":true},"expected":"no_test_needed"},
+  {"id":"small_code","policy":"test_decision","state":{"task_type":"coding","changed_files":1,"tests_available":true,"scope":"small"},"expected":"targeted_test"},
+  {"id":"many_code_files","policy":"test_decision","state":{"task_type":"refactoring","changed_files":15,"tests_available":true,"scope":"large"},"expected":"full_suite"},
+  {"id":"no_tests","policy":"test_decision","state":{"task_type":"coding","changed_files":2,"tests_available":false},"expected":"ask_user"},
+  {"id":"review_untested","policy":"review_decision","state":{"current_phase":"review","last_test_result":"not_run","changed_files":2},"expected":"run_tests"},
+  {"id":"review_passed","policy":"review_decision","state":{"current_phase":"review","last_test_result":"passed","changed_files":2},"expected":"self_review"},
+  {"id":"review_high_risk","policy":"review_decision","state":{"current_phase":"review","last_test_result":"passed","risk":"high","changed_files":8},"expected":"request_human_review"},
+  {"id":"review_no_changes","policy":"review_decision","state":{"current_phase":"review","last_test_result":"passed","changed_files":0},"expected":"continue"},
+  {"id":"action_failed","policy":"next_action","state":{"current_phase":"debugging","last_test_result":"failed","task_type":"debugging"},"expected":"debug"},
+  {"id":"action_edited","policy":"next_action","state":{"current_phase":"implementation","last_action":"edit","last_test_result":"not_run","tests_available":true},"expected":"test"},
+  {"id":"action_passed","policy":"next_action","state":{"current_phase":"testing","last_test_result":"passed","changed_files":2},"expected":"review"}
+]

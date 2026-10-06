@@ -1,0 +1,60 @@
+{
+  "command": [
+    "codex",
+    "--no-daemon",
+    "-a",
+    "never",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--json",
+    "-m",
+    "gpt-6-luna",
+    "-s",
+    "workspace-write",
+    "--disable",
+    "hooks",
+    "--disable",
+    "multi_agent",
+    "--disable",
+    "apps",
+    "--disable",
+    "plugins",
+    "-c",
+    "forced_login_method=\"chatgpt\"",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "-c",
+    "service_tier=\"default\"",
+    "-C",
+    "/Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/docs/codex-luna-pilot/runs/warm_timeout/baseline/workspace",
+    "-"
+  ],
+  "quota_before": {
+    "ordinary_usage_allowed": true,
+    "limits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+        "usedPercent": 7,
+        "windowDurationMins": 300,
+        "resetsAt": 1791280093
+      },
+      "secondary": {
+        "usedPercent": 48,
+        "windowDurationMins": 10080,
+        "resetsAt": 1791757285
+      },
+      "credits": {
+        "hasCredits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individualLimit": null,
+      "spendControlReached": false,
+      "planType": "plus",
+      "rateLimitReachedType": null
+    }
+  }
+}

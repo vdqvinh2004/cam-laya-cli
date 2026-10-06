@@ -1,0 +1,124 @@
+[
+  {
+    "id": "clamp_fix",
+    "eligible": false,
+    "prompt": "Fix the clamp function in bench_case/clamp.py. Edit only that file. Run python3 -m unittest discover -s bench_case -p test_clamp.py -q and report the result.",
+    "files": {
+      "bench_case/clamp.py": "def clamp(value, low, high):\n    return max(high, min(low, value))\n",
+      "bench_case/test_clamp.py": "import unittest\nfrom clamp import clamp\n\nclass ClampTests(unittest.TestCase):\n    def test_bounds(self):\n        self.assertEqual(clamp(-2, 0, 10), 0)\n        self.assertEqual(clamp(5, 0, 10), 5)\n        self.assertEqual(clamp(12, 0, 10), 10)\n"
+    },
+    "allowed_changes": ["bench_case/clamp.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_clamp.py", "-q"]
+  },
+  {
+    "id": "port_failure",
+    "eligible": true,
+    "prompt": "The port parser tests fail. Fix bench_case/port.py to accept surrounding whitespace and reject ports outside 1..65535. Edit only that file, run its unittest, and report the result.",
+    "files": {
+      "bench_case/port.py": "def parse_port(text):\n    return int(text)\n",
+      "bench_case/test_port.py": "import unittest\nfrom port import parse_port\n\nclass PortTests(unittest.TestCase):\n    def test_valid(self):\n        self.assertEqual(parse_port(' 443 '), 443)\n    def test_invalid(self):\n        for value in ('0', '65536', 'abc'):\n            with self.assertRaises(ValueError):\n                parse_port(value)\n"
+    },
+    "allowed_changes": ["bench_case/port.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_port.py", "-q"]
+  },
+  {
+    "id": "stable_paths",
+    "eligible": false,
+    "prompt": "Fix bench_case/paths.py so unique_paths removes duplicates while preserving first-seen order. Edit only that file, run its unittest, and report the result.",
+    "files": {
+      "bench_case/paths.py": "def unique_paths(paths):\n    return sorted(set(paths))\n",
+      "bench_case/test_paths.py": "import unittest\nfrom paths import unique_paths\n\nclass PathTests(unittest.TestCase):\n    def test_order(self):\n        self.assertEqual(unique_paths(['b.py', 'a.py', 'b.py', 'c.py']), ['b.py', 'a.py', 'c.py'])\n"
+    },
+    "allowed_changes": ["bench_case/paths.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_paths.py", "-q"]
+  },
+  {
+    "id": "retry_review",
+    "eligible": true,
+    "prompt": "Review and fix bench_case/retry.py: retry only transient HTTP statuses 429, 500, 502, 503, and 504. Edit only that file, run its unittest, and report the result.",
+    "files": {
+      "bench_case/retry.py": "def should_retry(status):\n    return status >= 400\n",
+      "bench_case/test_retry.py": "import unittest\nfrom retry import should_retry\n\nclass RetryTests(unittest.TestCase):\n    def test_transient_only(self):\n        for value in (429, 500, 502, 503, 504):\n            self.assertTrue(should_retry(value))\n        for value in (200, 400, 401, 404, 501):\n            self.assertFalse(should_retry(value))\n"
+    },
+    "allowed_changes": ["bench_case/retry.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_retry.py", "-q"]
+  },
+  {
+    "id": "config_merge",
+    "eligible": false,
+    "prompt": "Fix bench_case/config.py so merge_flags returns a merged dictionary without changing defaults. Edit only that file, run its unittest, and report the result.",
+    "files": {
+      "bench_case/config.py": "def merge_flags(defaults, overrides):\n    defaults.update(overrides)\n    return defaults\n",
+      "bench_case/test_config.py": "import unittest\nfrom config import merge_flags\n\nclass ConfigTests(unittest.TestCase):\n    def test_merge_without_mutation(self):\n        defaults = {'safe': True, 'fast': False}\n        self.assertEqual(merge_flags(defaults, {'fast': True}), {'safe': True, 'fast': True})\n        self.assertEqual(defaults, {'safe': True, 'fast': False})\n"
+    },
+    "allowed_changes": ["bench_case/config.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_config.py", "-q"]
+  },
+  {
+    "id": "test_scope",
+    "eligible": true,
+    "prompt": "Fix bench_case/scope.py so choose_scope returns 'none' for documentation-only changes, 'targeted' when changes are only under tests/, and 'full' otherwise. Edit only that file, run its unittest, and report the result.",
+    "files": {
+      "bench_case/scope.py": "def choose_scope(changed_files):\n    return 'full'\n",
+      "bench_case/test_scope.py": "import unittest\nfrom scope import choose_scope\n\nclass ScopeTests(unittest.TestCase):\n    def test_scopes(self):\n        self.assertEqual(choose_scope(['README.md', 'docs/guide.md']), 'none')\n        self.assertEqual(choose_scope(['tests/test_core.py']), 'targeted')\n        self.assertEqual(choose_scope(['src/app.py']), 'full')\n"
+    },
+    "allowed_changes": ["bench_case/scope.py"],
+    "check": ["python3", "-m", "unittest", "discover", "-s", "bench_case", "-p", "test_scope.py", "-q"]
+  },
+  {
+    "id": "strict_port",
+    "eligible": true,
+    "prompt": "Fix parse_port in bench_case/strict_port.py to accept surrounding whitespace and ASCII decimal digits only, returning an integer from 1 through 65535. Invalid inputs must raise ValueError. Edit only that file, run python3 -m unittest discover -s bench_case -p test_strict_port.py -q, and report the result.",
+    "files": {
+      "bench_case/strict_port.py": "def parse_port(text):\n    return int(text)\n",
+      "bench_case/test_strict_port.py": "import unittest\nfrom strict_port import parse_port\n\nclass StrictPortTests(unittest.TestCase):\n    def test_valid(self):\n        self.assertEqual(parse_port(' 443 '), 443)\n    def test_invalid(self):\n        for value in ('0', '65536', 'abc'):\n            with self.assertRaises(ValueError):\n                parse_port(value)\n"
+    },
+    "allowed_changes": [
+      "bench_case/strict_port.py"
+    ],
+    "check": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "bench_case",
+      "-p",
+      "test_strict_port.py",
+      "-q"
+    ],
+    "independent_check": [
+      "python3",
+      "-c",
+      "import sys; sys.path.insert(0, 'bench_case'); from strict_port import parse_port; assert parse_port('\\t00080\\n') == 80; bad = ('+80', '-80', '８０', ' '); exec(\"for value in bad:\\n try: parse_port(value)\\n except ValueError: pass\\n else: raise AssertionError(value)\")"
+    ]
+  },
+  {
+    "id": "finite_percent",
+    "eligible": true,
+    "prompt": "Fix parse_percent in bench_case/finite_percent.py to accept finite percentage values from 0 through 100, including the endpoints, and reject invalid input with ValueError. Edit only that file, run python3 -m unittest discover -s bench_case -p test_finite_percent.py -q, and report the result.",
+    "files": {
+      "bench_case/finite_percent.py": "def parse_percent(value):\n    return float(value)\n",
+      "bench_case/test_finite_percent.py": "import unittest\nfrom finite_percent import parse_percent\n\nclass FinitePercentTests(unittest.TestCase):\n    def test_valid(self):\n        self.assertEqual(parse_percent(' 25.5 '), 25.5)\n        self.assertEqual(parse_percent('0'), 0)\n        self.assertEqual(parse_percent('100'), 100)\n    def test_invalid(self):\n        for value in ('-1', '101', 'abc'):\n            with self.assertRaises(ValueError):\n                parse_percent(value)\n"
+    },
+    "allowed_changes": [
+      "bench_case/finite_percent.py"
+    ],
+    "check": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "bench_case",
+      "-p",
+      "test_finite_percent.py",
+      "-q"
+    ],
+    "independent_check": [
+      "python3",
+      "-c",
+      "import sys; sys.path.insert(0, 'bench_case'); from finite_percent import parse_percent; assert parse_percent(' 25.5 ') == 25.5; bad = ('nan', 'inf', '-inf', '1e309'); exec(\"for value in bad:\\n try: parse_percent(value)\\n except ValueError: pass\\n else: raise AssertionError(value)\")"
+    ]
+  }
+]
