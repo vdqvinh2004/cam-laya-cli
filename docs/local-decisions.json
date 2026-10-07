@@ -33,7 +33,7 @@
         "fallback_cases": 0,
         "hybrid_accepted": 20,
         "hybrid_correct": 20,
-        "median_latency_ms": 26.027
+        "median_latency_ms": 29.472
       },
       "heldout": {
         "cases": 40,
@@ -46,7 +46,7 @@
         "fallback_cases": 0,
         "hybrid_accepted": 40,
         "hybrid_correct": 40,
-        "median_latency_ms": 26.228
+        "median_latency_ms": 28.998
       }
     },
     "routing": {
@@ -63,7 +63,7 @@
         "fallback_cases": 5,
         "hybrid_accepted": 18,
         "hybrid_correct": 18,
-        "median_latency_ms": 43.606
+        "median_latency_ms": 47.942
       },
       "heldout": {
         "cases": 40,
@@ -76,7 +76,7 @@
         "fallback_cases": 2,
         "hybrid_accepted": 40,
         "hybrid_correct": 40,
-        "median_latency_ms": 43.543
+        "median_latency_ms": 47.124
       }
     },
     "triage": {
@@ -93,7 +93,7 @@
         "fallback_cases": 3,
         "hybrid_accepted": 20,
         "hybrid_correct": 20,
-        "median_latency_ms": 41.593
+        "median_latency_ms": 43.32
       },
       "heldout": {
         "cases": 40,
@@ -106,7 +106,7 @@
         "fallback_cases": 7,
         "hybrid_accepted": 36,
         "hybrid_correct": 34,
-        "median_latency_ms": 42.071
+        "median_latency_ms": 41.944
       }
     }
   },
@@ -121,7 +121,7 @@
       "confidence": 0.535,
       "rule": null,
       "status": "ok",
-      "latency_ms": 435.139
+      "latency_ms": 73.765
     },
     {
       "id": "routing-00-1",
@@ -133,7 +133,7 @@
       "confidence": 0.7421,
       "rule": null,
       "status": "ok",
-      "latency_ms": 64.886
+      "latency_ms": 43.737
     },
     {
       "id": "routing-01-0",
@@ -145,7 +145,7 @@
       "confidence": 0.7961,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 50.252
+      "latency_ms": 43.179
     },
     {
       "id": "routing-01-1",
@@ -157,7 +157,7 @@
       "confidence": 0.8245,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 44.28
+      "latency_ms": 43.748
     },
     {
       "id": "routing-02-0",
@@ -169,7 +169,7 @@
       "confidence": 0.8985,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.506
+      "latency_ms": 43.632
     },
     {
       "id": "routing-02-1",
@@ -181,7 +181,7 @@
       "confidence": 0.9838,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.378
+      "latency_ms": 44.612
     },
     {
       "id": "routing-03-0",
@@ -193,7 +193,7 @@
       "confidence": 0.4495,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 43.096
+      "latency_ms": 44.605
     },
     {
       "id": "routing-03-1",
@@ -205,7 +205,7 @@
       "confidence": 0.2965,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 44.779
+      "latency_ms": 59.273
     },
     {
       "id": "routing-04-0",
@@ -217,7 +217,7 @@
       "confidence": 0.8694,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.599
+      "latency_ms": 46.309
     },
     {
       "id": "routing-04-1",
@@ -229,7 +229,7 @@
       "confidence": 0.955,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 45.054
+      "latency_ms": 48.429
     },
     {
       "id": "routing-05-0",
@@ -241,7 +241,7 @@
       "confidence": 0.385,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.597
+      "latency_ms": 49.205
     },
     {
       "id": "routing-05-1",
@@ -253,7 +253,7 @@
       "confidence": 0.5618,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 44.314
+      "latency_ms": 47.318
     },
     {
       "id": "routing-06-0",
@@ -265,7 +265,7 @@
       "confidence": 0.8993,
       "rule": null,
       "status": "ok",
-      "latency_ms": 44.409
+      "latency_ms": 50.095
     },
     {
       "id": "routing-06-1",
@@ -277,7 +277,7 @@
       "confidence": 0.9154,
       "rule": null,
       "status": "ok",
-      "latency_ms": 45.382
+      "latency_ms": 48.247
     },
     {
       "id": "routing-07-0",
@@ -289,7 +289,7 @@
       "confidence": 0.8689,
       "rule": null,
       "status": "ok",
-      "latency_ms": 45.075
+      "latency_ms": 48.63
     },
     {
       "id": "routing-07-1",
@@ -301,7 +301,7 @@
       "confidence": 0.8959,
       "rule": null,
       "status": "ok",
-      "latency_ms": 58.143
+      "latency_ms": 49.674
     },
     {
       "id": "routing-08-0",
@@ -313,7 +313,7 @@
       "confidence": 0.7726,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 44.303
+      "latency_ms": 49.188
     },
     {
       "id": "routing-08-1",
@@ -325,7 +325,7 @@
       "confidence": 0.9267,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 42.546
+      "latency_ms": 49.236
     },
     {
       "id": "routing-09-0",
@@ -337,7 +337,7 @@
       "confidence": 0.6616,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.393
+      "latency_ms": 43.719
     },
     {
       "id": "routing-09-1",
@@ -349,7 +349,7 @@
       "confidence": 0.4599,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 43.403
+      "latency_ms": 43.908
     },
     {
       "id": "routing-10-0",
@@ -361,7 +361,7 @@
       "confidence": 0.6358,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 42.836
+      "latency_ms": 43.572
     },
     {
       "id": "routing-10-1",
@@ -373,7 +373,7 @@
       "confidence": 0.9348,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 42.939
+      "latency_ms": 44.035
     },
     {
       "id": "routing-11-0",
@@ -385,7 +385,7 @@
       "confidence": 0.7199,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 42.447
+      "latency_ms": 44.061
     },
     {
       "id": "routing-11-1",
@@ -397,7 +397,7 @@
       "confidence": 0.7384,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.488
+      "latency_ms": 47.124
     },
     {
       "id": "routing-12-0",
@@ -409,7 +409,7 @@
       "confidence": 0.8937,
       "rule": null,
       "status": "ok",
-      "latency_ms": 41.854
+      "latency_ms": 47.67
     },
     {
       "id": "routing-12-1",
@@ -421,7 +421,7 @@
       "confidence": 0.9342,
       "rule": null,
       "status": "ok",
-      "latency_ms": 43.233
+      "latency_ms": 49.53
     },
     {
       "id": "routing-13-0",
@@ -433,7 +433,7 @@
       "confidence": 0.7313,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 42.853
+      "latency_ms": 50.428
     },
     {
       "id": "routing-13-1",
@@ -445,7 +445,7 @@
       "confidence": 0.7589,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 42.92
+      "latency_ms": 49.511
     },
     {
       "id": "routing-14-0",
@@ -457,7 +457,7 @@
       "confidence": 0.9373,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.543
+      "latency_ms": 50.522
     },
     {
       "id": "routing-14-1",
@@ -469,7 +469,7 @@
       "confidence": 0.9811,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 42.846
+      "latency_ms": 49.918
     },
     {
       "id": "routing-15-0",
@@ -481,7 +481,7 @@
       "confidence": 0.6175,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 43.701
+      "latency_ms": 48.503
     },
     {
       "id": "routing-15-1",
@@ -493,7 +493,7 @@
       "confidence": 0.8687,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.957
+      "latency_ms": 50.558
     },
     {
       "id": "routing-16-0",
@@ -505,7 +505,7 @@
       "confidence": 0.8419,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.253
+      "latency_ms": 48.915
     },
     {
       "id": "routing-16-1",
@@ -517,7 +517,7 @@
       "confidence": 0.9671,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.122
+      "latency_ms": 47.661
     },
     {
       "id": "routing-17-0",
@@ -529,7 +529,7 @@
       "confidence": 0.3995,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 42.675
+      "latency_ms": 43.615
     },
     {
       "id": "routing-17-1",
@@ -541,7 +541,7 @@
       "confidence": 0.5056,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.546
+      "latency_ms": 43.353
     },
     {
       "id": "routing-18-0",
@@ -553,7 +553,7 @@
       "confidence": 0.7917,
       "rule": null,
       "status": "ok",
-      "latency_ms": 43.366
+      "latency_ms": 43.465
     },
     {
       "id": "routing-18-1",
@@ -565,7 +565,7 @@
       "confidence": 0.9177,
       "rule": null,
       "status": "ok",
-      "latency_ms": 43.623
+      "latency_ms": 43.615
     },
     {
       "id": "routing-19-0",
@@ -577,7 +577,7 @@
       "confidence": 0.9189,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 44.715
+      "latency_ms": 44.861
     },
     {
       "id": "routing-19-1",
@@ -589,7 +589,7 @@
       "confidence": 0.9481,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 44.623
+      "latency_ms": 46.404
     },
     {
       "id": "routing-20-0",
@@ -601,7 +601,7 @@
       "confidence": 0.7739,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.956
+      "latency_ms": 46.643
     },
     {
       "id": "routing-20-1",
@@ -613,7 +613,7 @@
       "confidence": 0.928,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.527
+      "latency_ms": 47.805
     },
     {
       "id": "routing-21-0",
@@ -625,7 +625,7 @@
       "confidence": 0.3592,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.735
+      "latency_ms": 47.368
     },
     {
       "id": "routing-21-1",
@@ -637,7 +637,7 @@
       "confidence": 0.433,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.854
+      "latency_ms": 47.942
     },
     {
       "id": "routing-22-0",
@@ -649,7 +649,7 @@
       "confidence": 0.9216,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 42.815
+      "latency_ms": 48.657
     },
     {
       "id": "routing-22-1",
@@ -661,7 +661,7 @@
       "confidence": 0.9173,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.59
+      "latency_ms": 47.07
     },
     {
       "id": "routing-23-0",
@@ -673,7 +673,7 @@
       "confidence": 0.938,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.2
+      "latency_ms": 43.868
     },
     {
       "id": "routing-23-1",
@@ -685,7 +685,7 @@
       "confidence": 0.9862,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.652
+      "latency_ms": 43.236
     },
     {
       "id": "routing-24-0",
@@ -697,7 +697,7 @@
       "confidence": 0.8862,
       "rule": null,
       "status": "ok",
-      "latency_ms": 44.484
+      "latency_ms": 43.717
     },
     {
       "id": "routing-24-1",
@@ -709,7 +709,7 @@
       "confidence": 0.9452,
       "rule": null,
       "status": "ok",
-      "latency_ms": 43.834
+      "latency_ms": 43.301
     },
     {
       "id": "routing-25-0",
@@ -721,7 +721,7 @@
       "confidence": 0.9865,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 43.962
+      "latency_ms": 43.457
     },
     {
       "id": "routing-25-1",
@@ -733,7 +733,7 @@
       "confidence": 0.9876,
       "rule": "documentation",
       "status": "ok",
-      "latency_ms": 43.3
+      "latency_ms": 44.168
     },
     {
       "id": "routing-26-0",
@@ -745,7 +745,7 @@
       "confidence": 0.8464,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.019
+      "latency_ms": 43.906
     },
     {
       "id": "routing-26-1",
@@ -757,7 +757,7 @@
       "confidence": 0.9877,
       "rule": "testing",
       "status": "ok",
-      "latency_ms": 43.585
+      "latency_ms": 44.803
     },
     {
       "id": "routing-27-0",
@@ -769,7 +769,7 @@
       "confidence": 0.9608,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 43.606
+      "latency_ms": 47.975
     },
     {
       "id": "routing-27-1",
@@ -781,7 +781,7 @@
       "confidence": 0.9386,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.856
+      "latency_ms": 48.871
     },
     {
       "id": "routing-28-0",
@@ -793,7 +793,7 @@
       "confidence": 0.7417,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.636
+      "latency_ms": 48.707
     },
     {
       "id": "routing-28-1",
@@ -805,7 +805,7 @@
       "confidence": 0.7933,
       "rule": "configuration",
       "status": "ok",
-      "latency_ms": 43.236
+      "latency_ms": 48.208
     },
     {
       "id": "routing-29-0",
@@ -817,7 +817,7 @@
       "confidence": 0.9333,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 43.525
+      "latency_ms": 49.509
     },
     {
       "id": "routing-29-1",
@@ -829,7 +829,7 @@
       "confidence": 0.8485,
       "rule": "research",
       "status": "ok",
-      "latency_ms": 44.949
+      "latency_ms": 50.054
     },
     {
       "id": "triage-00-0",
@@ -841,7 +841,7 @@
       "confidence": 0.4971,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 41.948
+      "latency_ms": 48.069
     },
     {
       "id": "triage-00-1",
@@ -853,7 +853,7 @@
       "confidence": 0.4943,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 41.024
+      "latency_ms": 44.404
     },
     {
       "id": "triage-01-0",
@@ -865,7 +865,7 @@
       "confidence": 0.9867,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 40.873
+      "latency_ms": 44.224
     },
     {
       "id": "triage-01-1",
@@ -877,7 +877,7 @@
       "confidence": 0.9858,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 45.672
+      "latency_ms": 47.216
     },
     {
       "id": "triage-02-0",
@@ -889,7 +889,7 @@
       "confidence": 1.0,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 39.728
+      "latency_ms": 49.142
     },
     {
       "id": "triage-02-1",
@@ -901,7 +901,7 @@
       "confidence": 1.0,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 58.704
+      "latency_ms": 58.719
     },
     {
       "id": "triage-03-0",
@@ -913,7 +913,7 @@
       "confidence": 0.9961,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 39.279
+      "latency_ms": 39.957
     },
     {
       "id": "triage-03-1",
@@ -925,7 +925,7 @@
       "confidence": 0.992,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 39.642
+      "latency_ms": 39.521
     },
     {
       "id": "triage-04-0",
@@ -937,7 +937,7 @@
       "confidence": 0.993,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 40.479
+      "latency_ms": 40.037
     },
     {
       "id": "triage-04-1",
@@ -949,7 +949,7 @@
       "confidence": 0.9968,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 40.32
+      "latency_ms": 40.535
     },
     {
       "id": "triage-05-0",
@@ -961,7 +961,7 @@
       "confidence": 0.8138,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.902
+      "latency_ms": 41.46
     },
     {
       "id": "triage-05-1",
@@ -973,7 +973,7 @@
       "confidence": 0.3826,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.915
+      "latency_ms": 43.567
     },
     {
       "id": "triage-06-0",
@@ -985,7 +985,7 @@
       "confidence": 0.3973,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 39.463
+      "latency_ms": 42.707
     },
     {
       "id": "triage-06-1",
@@ -997,7 +997,7 @@
       "confidence": 0.8581,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 39.727
+      "latency_ms": 43.942
     },
     {
       "id": "triage-07-0",
@@ -1009,7 +1009,7 @@
       "confidence": 0.5734,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 39.63
+      "latency_ms": 45.563
     },
     {
       "id": "triage-07-1",
@@ -1021,7 +1021,7 @@
       "confidence": 0.6127,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 43.685
+      "latency_ms": 46.494
     },
     {
       "id": "triage-08-0",
@@ -1033,7 +1033,7 @@
       "confidence": 0.9997,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 40.758
+      "latency_ms": 45.293
     },
     {
       "id": "triage-08-1",
@@ -1045,7 +1045,7 @@
       "confidence": 0.9999,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 45.093
+      "latency_ms": 47.086
     },
     {
       "id": "triage-09-0",
@@ -1057,7 +1057,7 @@
       "confidence": 0.9944,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 41.111
+      "latency_ms": 44.335
     },
     {
       "id": "triage-09-1",
@@ -1069,7 +1069,7 @@
       "confidence": 0.9974,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 46.12
+      "latency_ms": 46.596
     },
     {
       "id": "triage-10-0",
@@ -1081,7 +1081,7 @@
       "confidence": 0.994,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 42.16
+      "latency_ms": 42.642
     },
     {
       "id": "triage-10-1",
@@ -1093,7 +1093,7 @@
       "confidence": 0.9832,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 45.735
+      "latency_ms": 47.072
     },
     {
       "id": "triage-11-0",
@@ -1105,7 +1105,7 @@
       "confidence": 0.924,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.331
+      "latency_ms": 41.944
     },
     {
       "id": "triage-11-1",
@@ -1117,7 +1117,7 @@
       "confidence": 0.5473,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.16
+      "latency_ms": 39.777
     },
     {
       "id": "triage-12-0",
@@ -1129,7 +1129,7 @@
       "confidence": 0.9494,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.991
+      "latency_ms": 39.502
     },
     {
       "id": "triage-12-1",
@@ -1141,7 +1141,7 @@
       "confidence": 0.9699,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 46.167
+      "latency_ms": 43.786
     },
     {
       "id": "triage-13-0",
@@ -1153,7 +1153,7 @@
       "confidence": 0.845,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 41.478
+      "latency_ms": 39.936
     },
     {
       "id": "triage-13-1",
@@ -1165,7 +1165,7 @@
       "confidence": 0.7985,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 39.102
+      "latency_ms": 40.923
     },
     {
       "id": "triage-14-0",
@@ -1177,7 +1177,7 @@
       "confidence": 0.9866,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 39.505
+      "latency_ms": 41.324
     },
     {
       "id": "triage-14-1",
@@ -1189,7 +1189,7 @@
       "confidence": 0.9982,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 43.685
+      "latency_ms": 47.722
     },
     {
       "id": "triage-15-0",
@@ -1201,7 +1201,7 @@
       "confidence": 0.9619,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 39.822
+      "latency_ms": 45.858
     },
     {
       "id": "triage-15-1",
@@ -1213,7 +1213,7 @@
       "confidence": 0.9221,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 39.774
+      "latency_ms": 44.663
     },
     {
       "id": "triage-16-0",
@@ -1225,7 +1225,7 @@
       "confidence": 0.9491,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 40.905
+      "latency_ms": 45.09
     },
     {
       "id": "triage-16-1",
@@ -1237,7 +1237,7 @@
       "confidence": 0.9149,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 41.682
+      "latency_ms": 46.197
     },
     {
       "id": "triage-17-0",
@@ -1249,7 +1249,7 @@
       "confidence": 0.664,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.284
+      "latency_ms": 47.833
     },
     {
       "id": "triage-17-1",
@@ -1261,7 +1261,7 @@
       "confidence": 0.8318,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.02
+      "latency_ms": 47.254
     },
     {
       "id": "triage-18-0",
@@ -1273,7 +1273,7 @@
       "confidence": 0.9984,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 41.593
+      "latency_ms": 44.205
     },
     {
       "id": "triage-18-1",
@@ -1285,7 +1285,7 @@
       "confidence": 0.9956,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.708
+      "latency_ms": 42.128
     },
     {
       "id": "triage-19-0",
@@ -1297,7 +1297,7 @@
       "confidence": 0.9818,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 42.071
+      "latency_ms": 42.798
     },
     {
       "id": "triage-19-1",
@@ -1309,7 +1309,7 @@
       "confidence": 0.9896,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 42.994
+      "latency_ms": 44.145
     },
     {
       "id": "triage-20-0",
@@ -1321,7 +1321,7 @@
       "confidence": 0.9996,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 42.608
+      "latency_ms": 43.604
     },
     {
       "id": "triage-20-1",
@@ -1333,7 +1333,7 @@
       "confidence": 0.9977,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 42.892
+      "latency_ms": 40.314
     },
     {
       "id": "triage-21-0",
@@ -1345,7 +1345,7 @@
       "confidence": 0.9963,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.198
+      "latency_ms": 38.86
     },
     {
       "id": "triage-21-1",
@@ -1357,7 +1357,7 @@
       "confidence": 0.9765,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.857
+      "latency_ms": 39.408
     },
     {
       "id": "triage-22-0",
@@ -1369,7 +1369,7 @@
       "confidence": 0.9939,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 43.81
+      "latency_ms": 38.966
     },
     {
       "id": "triage-22-1",
@@ -1381,7 +1381,7 @@
       "confidence": 0.9916,
       "rule": "network",
       "status": "ok",
-      "latency_ms": 42.502
+      "latency_ms": 40.243
     },
     {
       "id": "triage-23-0",
@@ -1393,7 +1393,7 @@
       "confidence": 0.9023,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.293
+      "latency_ms": 40.189
     },
     {
       "id": "triage-23-1",
@@ -1405,7 +1405,7 @@
       "confidence": 0.8356,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.215
+      "latency_ms": 39.562
     },
     {
       "id": "triage-24-0",
@@ -1417,7 +1417,7 @@
       "confidence": 0.996,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 39.061
+      "latency_ms": 39.306
     },
     {
       "id": "triage-24-1",
@@ -1429,7 +1429,7 @@
       "confidence": 0.9953,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 43.915
+      "latency_ms": 42.798
     },
     {
       "id": "triage-25-0",
@@ -1441,7 +1441,7 @@
       "confidence": 0.9928,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 40.4
+      "latency_ms": 40.024
     },
     {
       "id": "triage-25-1",
@@ -1453,7 +1453,7 @@
       "confidence": 0.9904,
       "rule": "syntax",
       "status": "ok",
-      "latency_ms": 40.706
+      "latency_ms": 39.296
     },
     {
       "id": "triage-26-0",
@@ -1465,7 +1465,7 @@
       "confidence": 0.9988,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 40.45
+      "latency_ms": 39.513
     },
     {
       "id": "triage-26-1",
@@ -1477,7 +1477,7 @@
       "confidence": 0.9995,
       "rule": "assertion",
       "status": "ok",
-      "latency_ms": 40.074
+      "latency_ms": 39.194
     },
     {
       "id": "triage-27-0",
@@ -1489,7 +1489,7 @@
       "confidence": 0.9986,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 41.544
+      "latency_ms": 39.461
     },
     {
       "id": "triage-27-1",
@@ -1501,7 +1501,7 @@
       "confidence": 0.9993,
       "rule": "permission",
       "status": "ok",
-      "latency_ms": 45.615
+      "latency_ms": 43.32
     },
     {
       "id": "triage-28-0",
@@ -1513,7 +1513,7 @@
       "confidence": 0.8139,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 42.495
+      "latency_ms": 39.501
     },
     {
       "id": "triage-28-1",
@@ -1525,7 +1525,7 @@
       "confidence": 0.9528,
       "rule": "dependency",
       "status": "ok",
-      "latency_ms": 41.914
+      "latency_ms": 40.033
     },
     {
       "id": "triage-29-0",
@@ -1537,7 +1537,7 @@
       "confidence": 0.8643,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.342
+      "latency_ms": 39.261
     },
     {
       "id": "triage-29-1",
@@ -1549,7 +1549,7 @@
       "confidence": 0.7006,
       "rule": null,
       "status": "ok",
-      "latency_ms": 42.478
+      "latency_ms": 39.761
     },
     {
       "id": "relevance-00-A-0",
@@ -1561,7 +1561,7 @@
       "confidence": 0.9341,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.85
+      "latency_ms": 39.454
     },
     {
       "id": "relevance-00-A-1",
@@ -1573,7 +1573,7 @@
       "confidence": 0.8967,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.882
+      "latency_ms": 39.135
     },
     {
       "id": "relevance-00-B-0",
@@ -1585,7 +1585,7 @@
       "confidence": 0.9181,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.635
+      "latency_ms": 25.013
     },
     {
       "id": "relevance-00-B-1",
@@ -1597,7 +1597,7 @@
       "confidence": 0.9237,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.683
+      "latency_ms": 24.716
     },
     {
       "id": "relevance-01-A-0",
@@ -1609,7 +1609,7 @@
       "confidence": 0.9578,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.293
+      "latency_ms": 39.786
     },
     {
       "id": "relevance-01-A-1",
@@ -1621,7 +1621,7 @@
       "confidence": 0.9547,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.926
+      "latency_ms": 41.631
     },
     {
       "id": "relevance-01-B-0",
@@ -1633,7 +1633,7 @@
       "confidence": 0.9952,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.249
+      "latency_ms": 27.949
     },
     {
       "id": "relevance-01-B-1",
@@ -1645,7 +1645,7 @@
       "confidence": 0.9958,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.023
+      "latency_ms": 28.32
     },
     {
       "id": "relevance-02-A-0",
@@ -1657,7 +1657,7 @@
       "confidence": 0.9488,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.725
+      "latency_ms": 43.785
     },
     {
       "id": "relevance-02-A-1",
@@ -1669,7 +1669,7 @@
       "confidence": 0.9446,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.315
+      "latency_ms": 43.651
     },
     {
       "id": "relevance-02-B-0",
@@ -1681,7 +1681,7 @@
       "confidence": 0.9909,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.471
+      "latency_ms": 28.998
     },
     {
       "id": "relevance-02-B-1",
@@ -1693,7 +1693,7 @@
       "confidence": 0.995,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.511
+      "latency_ms": 29.307
     },
     {
       "id": "relevance-03-A-0",
@@ -1705,7 +1705,7 @@
       "confidence": 0.9257,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.599
+      "latency_ms": 44.998
     },
     {
       "id": "relevance-03-A-1",
@@ -1717,7 +1717,7 @@
       "confidence": 0.9085,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.63
+      "latency_ms": 43.324
     },
     {
       "id": "relevance-03-B-0",
@@ -1729,7 +1729,7 @@
       "confidence": 0.9688,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.838
+      "latency_ms": 29.472
     },
     {
       "id": "relevance-03-B-1",
@@ -1741,7 +1741,7 @@
       "confidence": 0.9805,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.662
+      "latency_ms": 28.887
     },
     {
       "id": "relevance-04-A-0",
@@ -1753,7 +1753,7 @@
       "confidence": 0.7247,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.557
+      "latency_ms": 43.005
     },
     {
       "id": "relevance-04-A-1",
@@ -1765,7 +1765,7 @@
       "confidence": 0.6918,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.346
+      "latency_ms": 42.778
     },
     {
       "id": "relevance-04-B-0",
@@ -1777,7 +1777,7 @@
       "confidence": 0.9253,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.784
+      "latency_ms": 29.37
     },
     {
       "id": "relevance-04-B-1",
@@ -1789,7 +1789,7 @@
       "confidence": 0.9078,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.337
+      "latency_ms": 29.6
     },
     {
       "id": "relevance-05-A-0",
@@ -1801,7 +1801,7 @@
       "confidence": 0.8638,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.064
+      "latency_ms": 28.056
     },
     {
       "id": "relevance-05-A-1",
@@ -1813,7 +1813,7 @@
       "confidence": 0.8513,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.346
+      "latency_ms": 28.985
     },
     {
       "id": "relevance-05-B-0",
@@ -1825,7 +1825,7 @@
       "confidence": 0.8866,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.472
+      "latency_ms": 25.238
     },
     {
       "id": "relevance-05-B-1",
@@ -1837,7 +1837,7 @@
       "confidence": 0.9084,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.88
+      "latency_ms": 24.225
     },
     {
       "id": "relevance-06-A-0",
@@ -1849,7 +1849,7 @@
       "confidence": 0.6236,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.219
+      "latency_ms": 38.367
     },
     {
       "id": "relevance-06-A-1",
@@ -1861,7 +1861,7 @@
       "confidence": 0.5957,
       "rule": null,
       "status": "ok",
-      "latency_ms": 41.478
+      "latency_ms": 38.527
     },
     {
       "id": "relevance-06-B-0",
@@ -1873,7 +1873,7 @@
       "confidence": 0.989,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.027
+      "latency_ms": 23.898
     },
     {
       "id": "relevance-06-B-1",
@@ -1885,7 +1885,7 @@
       "confidence": 0.9899,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.69
+      "latency_ms": 23.62
     },
     {
       "id": "relevance-07-A-0",
@@ -1897,7 +1897,7 @@
       "confidence": 0.7968,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.554
+      "latency_ms": 38.965
     },
     {
       "id": "relevance-07-A-1",
@@ -1909,7 +1909,7 @@
       "confidence": 0.7095,
       "rule": null,
       "status": "ok",
-      "latency_ms": 38.844
+      "latency_ms": 40.08
     },
     {
       "id": "relevance-07-B-0",
@@ -1921,7 +1921,7 @@
       "confidence": 0.9903,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.379
+      "latency_ms": 27.979
     },
     {
       "id": "relevance-07-B-1",
@@ -1933,7 +1933,7 @@
       "confidence": 0.9901,
       "rule": null,
       "status": "ok",
-      "latency_ms": 23.895
+      "latency_ms": 27.799
     },
     {
       "id": "relevance-08-A-0",
@@ -1945,7 +1945,7 @@
       "confidence": 0.8563,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.576
+      "latency_ms": 26.5
     },
     {
       "id": "relevance-08-A-1",
@@ -1957,7 +1957,7 @@
       "confidence": 0.7509,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.328
+      "latency_ms": 28.414
     },
     {
       "id": "relevance-08-B-0",
@@ -1969,7 +1969,7 @@
       "confidence": 0.9528,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.215
+      "latency_ms": 28.093
     },
     {
       "id": "relevance-08-B-1",
@@ -1981,7 +1981,7 @@
       "confidence": 0.9646,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.576
+      "latency_ms": 27.424
     },
     {
       "id": "relevance-09-A-0",
@@ -1993,7 +1993,7 @@
       "confidence": 0.9559,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.517
+      "latency_ms": 29.376
     },
     {
       "id": "relevance-09-A-1",
@@ -2005,7 +2005,7 @@
       "confidence": 0.9593,
       "rule": null,
       "status": "ok",
-      "latency_ms": 23.847
+      "latency_ms": 27.612
     },
     {
       "id": "relevance-09-B-0",
@@ -2017,7 +2017,7 @@
       "confidence": 0.9835,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.617
+      "latency_ms": 27.787
     },
     {
       "id": "relevance-09-B-1",
@@ -2029,7 +2029,7 @@
       "confidence": 0.9871,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.791
+      "latency_ms": 29.79
     },
     {
       "id": "relevance-10-A-0",
@@ -2041,7 +2041,7 @@
       "confidence": 0.8793,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.086
+      "latency_ms": 27.908
     },
     {
       "id": "relevance-10-A-1",
@@ -2053,7 +2053,7 @@
       "confidence": 0.8778,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.046
+      "latency_ms": 28.598
     },
     {
       "id": "relevance-10-B-0",
@@ -2065,7 +2065,7 @@
       "confidence": 0.8738,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.782
+      "latency_ms": 28.292
     },
     {
       "id": "relevance-10-B-1",
@@ -2077,7 +2077,7 @@
       "confidence": 0.8619,
       "rule": null,
       "status": "ok",
-      "latency_ms": 24.554
+      "latency_ms": 28.208
     },
     {
       "id": "relevance-11-A-0",
@@ -2089,7 +2089,7 @@
       "confidence": 0.7527,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.4
+      "latency_ms": 41.201
     },
     {
       "id": "relevance-11-A-1",
@@ -2101,7 +2101,7 @@
       "confidence": 0.7966,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.471
+      "latency_ms": 43.31
     },
     {
       "id": "relevance-11-B-0",
@@ -2113,7 +2113,7 @@
       "confidence": 0.9982,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.228
+      "latency_ms": 27.529
     },
     {
       "id": "relevance-11-B-1",
@@ -2125,7 +2125,7 @@
       "confidence": 0.9994,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.97
+      "latency_ms": 28.783
     },
     {
       "id": "relevance-12-A-0",
@@ -2137,7 +2137,7 @@
       "confidence": 0.8946,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.454
+      "latency_ms": 43.346
     },
     {
       "id": "relevance-12-A-1",
@@ -2149,7 +2149,7 @@
       "confidence": 0.8651,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.846
+      "latency_ms": 39.448
     },
     {
       "id": "relevance-12-B-0",
@@ -2161,7 +2161,7 @@
       "confidence": 0.9939,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.203
+      "latency_ms": 24.368
     },
     {
       "id": "relevance-12-B-1",
@@ -2173,7 +2173,7 @@
       "confidence": 0.9911,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.841
+      "latency_ms": 23.709
     },
     {
       "id": "relevance-13-A-0",
@@ -2185,7 +2185,7 @@
       "confidence": 0.7844,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.942
+      "latency_ms": 38.653
     },
     {
       "id": "relevance-13-A-1",
@@ -2197,7 +2197,7 @@
       "confidence": 0.6713,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.414
+      "latency_ms": 39.42
     },
     {
       "id": "relevance-13-B-0",
@@ -2209,7 +2209,7 @@
       "confidence": 0.9931,
       "rule": null,
       "status": "ok",
-      "latency_ms": 25.805
+      "latency_ms": 24.185
     },
     {
       "id": "relevance-13-B-1",
@@ -2221,7 +2221,7 @@
       "confidence": 0.9952,
       "rule": null,
       "status": "ok",
-      "latency_ms": 26.386
+      "latency_ms": 24.498
     },
     {
       "id": "relevance-14-A-0",
@@ -2233,7 +2233,7 @@
       "confidence": 0.8124,
       "rule": null,
       "status": "ok",
-      "latency_ms": 41.234
+      "latency_ms": 40.351
     },
     {
       "id": "relevance-14-A-1",
@@ -2245,7 +2245,7 @@
       "confidence": 0.7724,
       "rule": null,
       "status": "ok",
-      "latency_ms": 46.167
+      "latency_ms": 43.768
     },
     {
       "id": "relevance-14-B-0",
@@ -2257,7 +2257,7 @@
       "confidence": 0.9838,
       "rule": null,
       "status": "ok",
-      "latency_ms": 39.685
+      "latency_ms": 43.458
     },
     {
       "id": "relevance-14-B-1",
@@ -2269,7 +2269,7 @@
       "confidence": 0.9883,
       "rule": null,
       "status": "ok",
-      "latency_ms": 40.158
+      "latency_ms": 43.161
     }
   ],
   "threshold_policy": "Highest development coverage at >=95% observed accepted accuracy; ties stricter. No eligible threshold means no proposed automatic gate.",

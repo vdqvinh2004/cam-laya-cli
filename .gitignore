@@ -4,3 +4,10 @@ __pycache__/
 dist/
 .ruff_cache/
 .DS_Store
+# Local cam-laya-cli agent integrations (machine-specific paths; reinstall via `cam-laya-cli install-agent`)
+.agents/skills/cam-laya/
+.claude/skills/cam-laya/
+.codex/hooks.json
+.codex/hooks.json.cam-laya.bak
+.opencode/skills/cam-laya/
+.opencode/plugins/cam-laya-prewarm.js

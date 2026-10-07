@@ -2,6 +2,8 @@
 
 Date: 2026-10-06. Package: `cam-laya-cli` 0.1.0. Historical source: sibling `cam-laya-mcp` at `e73ff6e`, left unchanged.
 
+Re-check 2026-10-08: re-ran the full local suite after adding the `tool_choice` preset (frozen corpus untouched, SHA `ed4ec0d0` unchanged). Guards 299/299, legacy rules 12/12, relevance 40/40, routing raw 37/40 (accepted 36/38), triage raw 39/40 with the same rules-introduced errors, paired order/framing changes 6/90, robustness 10/12 with the same 2 negation failures. Fresh CLI median ~50.3 ms (p95 ~55.7), persistent IPC median ~26.7 ms; transport parity held (IPC ~24.9 vs MCP ~26.8). Conclusion below is unchanged.
+
 ## Conclusion
 
 The CLI is functional, with a resident local model worker, typed questions, JSONL batches, deterministic coding presets, and project-scoped Codex/Claude/OpenCode skills. Prewarming is optional and injects no advice. The base package has no runtime dependencies; MLX and the benchmark-only MCP adapter are separate extras.
