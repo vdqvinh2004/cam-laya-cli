@@ -1,1 +1,0 @@
-{"state":{"message":"The build fails because a dependency cannot be imported."},"questions":{"category":{"type":"choice","instructions":"Classify the reported problem.","criteria":{"dependency":"Missing or incompatible package","syntax":"Invalid source syntax","assertion":"Test assertion mismatch","other":"Other or insufficient evidence"}}}}

@@ -1,0 +1,3 @@
+{"id": "failed-test", "preset": "test_decision", "state": {"last_test_result": "failed"}}
+{"id": "safe-cmd", "preset": "risk_check", "state": {"action": "git status"}}
+{"id": "next", "preset": "next_action", "state": {"current_phase": "implementation", "last_action": "edit", "last_test_result": "not_run"}}

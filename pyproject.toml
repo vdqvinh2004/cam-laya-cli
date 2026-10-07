@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cam-laya-cli"
-version = "0.1.0"
-description = "CLI-first local typed decisions for shell-capable coding agents"
+version = "0.2.0"
+description = "CLI-first local policy checks for shell-capable coding agents"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
@@ -13,8 +13,6 @@ license-files = ["LICENSE", "NOTICE"]
 dependencies = []
 
 [project.optional-dependencies]
-mlx = ["laya-mlx==0.3.0"]
-benchmark = ["mcp==2.3.0"]
 dev = ["build>=1", "ruff>=0.12"]
 
 [project.scripts]

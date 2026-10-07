@@ -4,7 +4,6 @@ import re
 import shlex
 
 OPTIONS = {
-    "route_task": ["coding", "debugging", "refactoring", "testing", "documentation", "research", "architecture", "dependency_management", "security", "devops", "configuration", "code_review"],
     "next_action": ["inspect", "search", "edit", "implement", "test", "debug", "review", "commit", "ask_user", "stop"],
     "test_decision": ["no_test_needed", "targeted_test", "unit_tests", "integration_tests", "e2e_tests", "full_suite", "debug_failure", "ask_user"],
     "review_decision": ["continue", "self_review", "run_tests", "request_human_review", "stop"],

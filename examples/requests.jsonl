@@ -1,2 +1,0 @@
-{"id":"failed-test","preset":"test_decision","state":{"last_test_result":"failed"}}
-{"id":"classification","state":"The build cannot import a dependency.","questions":{"category":{"type":"choice","instructions":"Classify the failure.","criteria":{"dependency":"Missing package","syntax":"Source syntax error","other":"Other failure"}}}}
