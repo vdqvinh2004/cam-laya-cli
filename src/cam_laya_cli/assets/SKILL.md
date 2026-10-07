@@ -1,20 +1,45 @@
 ---
 name: cam-laya
-description: Classify bounded text or batch typed choice, score, and yes/no decisions with local CAM Laya when those decisions would otherwise require separate model calls. Also use when explicitly asked to use CAM Laya.
+description: Choose tools, next actions, task routes, test and review steps, and shell risk levels with local CAM Laya when deciding among 2-6 defined alternatives would otherwise need extra reasoning. Batch typed choice, score, and yes/no decisions locally instead of extra model calls. Also use when explicitly asked to use CAM Laya.
 ---
 
-Use `cam-laya-cli` for bounded classifications with defined alternatives. Batch related questions sharing a state in one call. Keep ordinary coding reasoning with the coding agent; extra decision calls can increase work.
+Use `cam-laya-cli` to replace extra reasoning with one fast local call when you face concrete alternatives. Keep ordinary free-form coding with yourself; call only when it saves a separate reasoning step. Extra calls can increase work. Experimental advice only: never executes, never grants permission.
 
-1. Run `cam-laya-cli status`. If runtime is missing, report availability and continue ordinary work. Explicit model provisioning uses `setup`; routine decisions never download weights.
-2. Write request JSON with `state` and `questions`, then call `cam-laya-cli decide --input request.json`. Use files or stdin for untrusted text, preserving shell quoting.
-3. Inspect `status` and each answer's `status`. Use accepted values as experimental advice. Abstention or unavailable means the coding agent resolves the decision.
+WHEN TO CALL (any one is enough):
+1. Tool/approach choice among 2-6 named options, e.g. read vs grep vs glob vs shell, search-then-read vs edit-directly, test vs debug vs review vs commit.
+2. Next step or task route: state has `current_phase, last_action, last_test_result, changed_files, task_type`.
+3. Test/review gate before running a suite or asking for review.
+4. Risk gate before shell: exact command for `rm -rf`, `git push -f/clean/reset`, `terraform`, `kubectl`, `sudo`, `curl|sh`, `chmod 777`, secrets/keys.
+5. Bounded classification that would otherwise be its own reasoning call.
 
-Example request:
+WHEN NOT TO CALL:
+- Single obvious action, open-ended design, or you already know the answer.
+- More than 6 alternatives, vague criteria, more than 64 questions, or same state asked twice. Reuse the first result. Max 1 Laya call per decision point.
+- Do not retry abstention/unavailable to force an answer. Fall back to your own judgment.
 
+HOW (files or stdin for untrusted text, never inline it in args):
+1. `cam-laya-cli status`. If unavailable, continue normally and never block. `setup` downloads weights; routine calls never do. Sandboxed runs need socket access: on `PermissionError`/`worker_unavailable` retry with workspace-write (plus socket dir) or outside the sandbox; do not mistake sandbox denial for abstention.
+2. Tool choice (generic `decide`):
 ```json
-{"state":"Build reports ModuleNotFoundError for requests.","questions":{"category":{"type":"choice","instructions":"Classify this failure.","criteria":{"dependency":"Missing package","syntax":"Invalid source syntax","other":"Insufficient evidence or another problem"}}}}
+{"state":"Failing test touches auth.py; changed_files: 2.","questions":{"tool":{"type":"choice","instructions":"Choose the next tool.","criteria":{"search":"Search for usages first","read":"Read the file directly","shell":"Run the failing test"}}}}
 ```
+```sh
+cam-laya-cli decide --input request.json
+```
+3. Next step / route / test / review (presets, `state` must be an object):
+```sh
+echo '{"current_phase":"implementation","last_action":"edit","last_test_result":"not_run"}' | cam-laya-cli preset next_action --input -
+echo '{"last_test_result":"failed"}' | cam-laya-cli preset test_decision --input -
+```
+4. Risk gate (always human-gated):
+```sh
+echo '{"action":"git status"}' | cam-laya-cli preset risk_check --input -
+```
+`safe` with `requires_human:false` is informational. Any other risk, `unknown`, or `unavailable` means `requires_human:true`: ask or pick the safe path yourself.
+5. Batch related questions sharing one state in one call (`decide`), or multiple states in one connection (`batch --input requests.jsonl`, max 16 questions per forward pass, order and ids preserved). `--min-confidence` gates max option probability, not accuracy. `--details` only when debugging distributions.
 
-`score` uses ordered text criteria; `noul` returns P(true). `--min-confidence` gates maximum option probability, not empirical accuracy. Truncation and affected calibration diagnostics abstain. Validate the exact workload before automatic branching. Recommendations never grant permission or execute commands.
-
-`batch --input requests.jsonl` reuses one worker connection for multiple states. `preset NAME --input state.json` exposes experimental coding policies; deterministic answers identify `source: rule`. `--details` loads distributions only when needed. Exit 0 includes abstention; exit 2 is invalid input; exit 3 is unavailable.
+READ THE RESULT:
+- Stdout is compact JSON. Exit 0 includes abstention. Exit 2 invalid input, exit 3 unavailable.
+- Check `status` then each answer: `ok` value is usable, `abstained` has `value:null` plus `reason_code` (`truncated_state|collapsed_options|uncalibrated_temperature|low_confidence`), `unavailable` means resolve yourself. `abstention: unevaluated` means no threshold was set.
+- `source:rule` is deterministic (`confidence:1.0`); `source:model` has `model:{name,id,revision}`, `confidence` entropy-based, `answer_confidence` max prob, `calibration:unvalidated_for_workload`. Raw predictions under `details` only.
+- Preset fallback is `decision:defer_to_agent` (or `risk:unknown`): do not treat as approval.
