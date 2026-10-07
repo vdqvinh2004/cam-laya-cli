@@ -1,6 +1,0 @@
-Doctor reports owned integration assets as configured even after users modify them. Find integration status reporting and compare present assets with their recorded digests. Report state modified when all assets are files but any content differs; state incomplete when an asset is missing or not a file; configured_unverified only when all recorded asset hashes match. Never set live_verified true or change assets during diagnostics.
-Make the smallest working change and add a regression check in tests/test_cli.py.
-Only modify src/cam_laya_cli/*.py and tests/test_cli.py. Do not modify other files,
-install packages, download models, use the network, delegate, or change Git history.
-Run PYTHONPATH=src /Volumes/LexarPlaySSD/Develop/Codes/CAM/cam-laya-cli/.venv/bin/python -m unittest discover -s tests -v, then report changes and test result.
-Use that absolute Python interpreter for Python commands; login shells reset PATH.
