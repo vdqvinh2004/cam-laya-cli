@@ -9,6 +9,7 @@ OPTIONS = {
     "test_decision": ["no_test_needed", "targeted_test", "unit_tests", "integration_tests", "e2e_tests", "full_suite", "debug_failure", "ask_user"],
     "review_decision": ["continue", "self_review", "run_tests", "request_human_review", "stop"],
     "risk_check": ["safe", "low", "medium", "high", "destructive"],
+    "tool_choice": ["search", "read", "shell", "edit", "test", "ask_user"],
 }
 
 SAFE_COMMANDS = frozenset({"git status", "git diff", "git log", "npm test", "pytest", "cargo test"})
@@ -148,4 +149,8 @@ def deterministic_choice(policy: str, state: dict) -> str | None:
             return "review"
         if state.get("current_phase"):
             return "inspect"
+    elif policy == "tool_choice":
+        # Keep deterministic coverage minimal; tool selection is otherwise model-advised.
+        if state.get("tests_available") is False:
+            return "ask_user"
     return None

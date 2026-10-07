@@ -29,7 +29,9 @@ Custom JSON contains `state` (text, object, or conversation list) and `questions
 
 JSONL batches accept the same request envelope, including `preset` instead of `questions`. Different states execute serially on one connection. Questions sharing a state use native MLX question batching (16 per forward pass). Results preserve input order and IDs; invalid records report their line number and do not discard later records. Empty lines are invalid records.
 
-Coding presets: `route_task`, `next_action`, `test_decision`, `review_decision`, `risk_check`. Known transitions use deterministic rules; unresolved advice uses Laya and is experimental. Hard-risk checks run locally. A model risk result always requires human review. This tool never executes recommendations and does not install command-blocking safety hooks.
+Coding presets: `route_task`, `next_action`, `tool_choice`, `test_decision`, `review_decision`, `risk_check`. Known transitions use deterministic rules; unresolved advice uses Laya and is experimental. Hard-risk checks run locally. A model risk result always requires human review. This tool never executes recommendations and does not install command-blocking safety hooks.
+
+Quote JSON with single quotes or files/stdin; unquoted `{...}` breaks in zsh (brace expansion) and double quotes need escaping. Prefer heredoc files for multi-line states: `cat > request.json <<'EOF' ... EOF`. Sandboxed agents need socket access: `read-only`/`workspace-write` sandboxes block the private worker socket (`PermissionError`, exit 3). Retry with workspace write plus the socket dir or outside the sandbox; never mistake sandbox denial for abstention.
 
 ## Results and failures
 

@@ -6,7 +6,7 @@ description: Choose tools, next actions, task routes, test and review steps, and
 Use `cam-laya-cli` to replace extra reasoning with one fast local call when you face concrete alternatives. Keep ordinary free-form coding with yourself; call only when it saves a separate reasoning step. Extra calls can increase work. Experimental advice only: never executes, never grants permission.
 
 WHEN TO CALL (any one is enough):
-1. Tool/approach choice among 2-6 named options, e.g. read vs grep vs glob vs shell, search-then-read vs edit-directly, test vs debug vs review vs commit.
+1. Tool choice among the fixed set (`search, read, shell, edit, test, ask_user`): `preset tool_choice`. Custom tool sets use generic `decide` choice (2-6 options).
 2. Next step or task route: state has `current_phase, last_action, last_test_result, changed_files, task_type`.
 3. Test/review gate before running a suite or asking for review.
 4. Risk gate before shell: exact command for `rm -rf`, `git push -f/clean/reset`, `terraform`, `kubectl`, `sudo`, `curl|sh`, `chmod 777`, secrets/keys.
@@ -19,7 +19,11 @@ WHEN NOT TO CALL:
 
 HOW (files or stdin for untrusted text, never inline it in args):
 1. `cam-laya-cli status`. If unavailable, continue normally and never block. `setup` downloads weights; routine calls never do. Sandboxed runs need socket access: on `PermissionError`/`worker_unavailable` retry with workspace-write (plus socket dir) or outside the sandbox; do not mistake sandbox denial for abstention.
-2. Tool choice (generic `decide`):
+2. Tool choice (fixed set, `state` must be an object):
+```sh
+echo '{"current_phase":"debugging","last_test_result":"failed","changed_files":2}' | cam-laya-cli preset tool_choice --input -
+```
+Custom tool sets use generic `decide` (2-6 criteria):
 ```json
 {"state":"Failing test touches auth.py; changed_files: 2.","questions":{"tool":{"type":"choice","instructions":"Choose the next tool.","criteria":{"search":"Search for usages first","read":"Read the file directly","shell":"Run the failing test"}}}}
 ```
