@@ -18,7 +18,7 @@ WHEN NOT TO CALL:
 - Do not retry abstention/unavailable to force an answer. Fall back to your own judgment.
 
 HOW (files or stdin for untrusted text, never inline it in args):
-1. `cam-laya-cli status`. If unavailable, continue normally and never block. `setup` downloads weights; routine calls never do. Sandboxed runs need socket access: on `PermissionError`/`worker_unavailable` retry with workspace-write (plus socket dir) or outside the sandbox; do not mistake sandbox denial for abstention.
+1. `cam-laya-cli status`. If unavailable, continue normally and never block. `setup` downloads weights; routine calls never do. Sandboxed runs need socket access: on `PermissionError`/`worker_unavailable` retry with workspace-write (plus socket dir) or outside the sandbox; do not mistake sandbox denial for abstention. Codex example: `codex exec --sandbox workspace-write --add-dir ~/.local/state/cam-laya-cli --add-dir /tmp -- ...`.
 2. Tool choice (fixed set, `state` must be an object):
 ```sh
 echo '{"current_phase":"debugging","last_test_result":"failed","changed_files":2}' | cam-laya-cli preset tool_choice --input -

@@ -32,7 +32,7 @@ JSONL batches accept the same request envelope, including `preset` instead of `q
 
 Coding presets: `route_task`, `next_action`, `tool_choice`, `test_decision`, `review_decision`, `risk_check`. Known transitions use deterministic rules; unresolved advice uses Laya and is experimental. Hard-risk checks run locally. A model risk result always requires human review. This tool never executes recommendations and does not install command-blocking safety hooks.
 
-Quote JSON with single quotes or files/stdin; unquoted `{...}` breaks in zsh (brace expansion) and double quotes need escaping. Prefer heredoc files for multi-line states: `cat > request.json <<'EOF' ... EOF`. Sandboxed agents need socket access: `read-only`/`workspace-write` sandboxes block the private worker socket (`PermissionError`, exit 3). Retry with workspace write plus the socket dir or outside the sandbox; never mistake sandbox denial for abstention.
+Quote JSON with single quotes or files/stdin; unquoted `{...}` breaks in zsh (brace expansion) and double quotes need escaping. Prefer heredoc files for multi-line states: `cat > request.json <<'EOF' ... EOF`. Sandboxed agents need socket access: `read-only`/`workspace-write` sandboxes block the private worker socket (`PermissionError`, exit 3). Retry with workspace write plus the socket dir or outside the sandbox; do not mistake sandbox denial for abstention. Codex example: `codex exec --sandbox workspace-write --add-dir ~/.local/state/cam-laya-cli --add-dir /tmp -- ...`.
 
 ## Results and failures
 
@@ -76,5 +76,7 @@ uv run python -m unittest discover -s tests -v
 uv run ruff check .
 uv build
 ```
+
+After changing `src/`, refresh the two things agents actually use: reinstall the PATH binary (`uv tool install --python 3.12 '.[mlx]'`) and restart the persistent worker (`cam-laya-cli stop`; the next call starts a fresh one). A stale binary rejects new presets/options, and a stale worker validates against old code.
 
 Python 3.11+ base package has no runtime dependencies. Optional MLX is pinned to 0.3.0. Checkpoint revisions and all resolved dependencies are pinned in source and `uv.lock`. Configuration: `$XDG_CONFIG_HOME/cam-laya-cli` (default `~/.config`); state: `$XDG_STATE_HOME/cam-laya-cli` (default `~/.local/state`). Long socket paths use a private, configuration-specific directory under `/tmp`.
