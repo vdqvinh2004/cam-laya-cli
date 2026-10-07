@@ -22,6 +22,7 @@ Base installation (`uv tool install .`) supports rules, diagnostics, integration
 ```sh
 cam-laya-cli decide --input examples/request.json
 cam-laya-cli preset test_decision --input examples/state.json
+cam-laya-cli preset tool_choice --input examples/tool_choice.json
 cam-laya-cli batch --input examples/requests.jsonl
 ```
 

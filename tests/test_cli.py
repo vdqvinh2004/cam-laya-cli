@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 from cam_laya_cli.engine import Engine, Runtime, Unavailable, validate
 from cam_laya_cli.integrations import install, uninstall
-from cam_laya_cli.presets import hard_risk
+from cam_laya_cli.presets import OPTIONS, hard_risk
 from cam_laya_cli.worker import MAX_BYTES, Client, parse, request
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -99,6 +99,27 @@ class Decisions(unittest.TestCase):
         self.assertTrue(result["requires_human"])
         result = Engine(FakeRuntime()).decide({"preset": "risk_check", "state": {"action": "custom-operation"}})
         self.assertTrue(result["requires_human"])
+
+    def test_tool_choice_preset(self):
+        runtime = FakeRuntime(unavailable=True)
+        result = Engine(runtime).decide({
+            "preset": "tool_choice", "state": {"current_phase": "coding", "tests_available": False}})
+        self.assertEqual(result["decision"], "ask_user")
+        self.assertEqual(result["source"], "rule")
+        self.assertEqual(runtime.calls, 0)
+        runtime = FakeRuntime()
+        result = Engine(runtime).decide({
+            "preset": "tool_choice",
+            "state": {"current_phase": "debugging", "last_test_result": "failed", "changed_files": 2}})
+        self.assertEqual(result["status"], "ok")
+        self.assertIn(result["decision"], OPTIONS["tool_choice"])
+        self.assertTrue(result.get("experimental"))
+        result = Engine(FakeRuntime(unavailable=True)).decide({
+            "preset": "tool_choice", "state": {"current_phase": "debugging"}})
+        self.assertEqual(result["status"], "unavailable")
+        self.assertEqual(result["decision"], "defer_to_agent")
+        with self.assertRaises(ValueError):
+            validate({"preset": "tool_choice", "state": "text"})
 
     def test_input_boundaries(self):
         for raw in [b'{"a":1,"a":2}', b'{"x":NaN}', b'{"x":Infinity}', b'x' * (MAX_BYTES + 1)]:
